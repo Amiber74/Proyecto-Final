@@ -8,6 +8,7 @@
     /*      DISEÑO DE LA PAGINA     */
 h1{
     text-decoration: underline;
+    align-self: center;
 }
 body{
     display: grid;
@@ -142,16 +143,146 @@ img{
     }
 }
 
+        /*      Paginda de Artefactos      */
 
+.main-artefactos{
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: repeat(3,1fr);
+    gap: 5px ;
+    grid-template-areas: 
+    "mondstand"
+    "liyue"
+    "inazuma"
+}
 
+.mondstand{
+    grid-area: mondstand;
+    padding: 5px;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: 1fr 2fr 2fr; 
+    gap: 5px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "gladiador orquesta sombra doncella"
+    "corazon nomada furia domador"; 
+    justify-items: center;
+    align-items: center;
+}
+.mondstand h2{
+    grid-area: titulo;
+    text-shadow: 0 0 5px white;
+}
+.gladiador img{
+    grid-area: gladiador;
+}
+.orquesta img{
+    grid-area: orquesta;
+}
+.sombra{
+    grid-area: sombra;
+}
+.doncella{
+    grid-area: doncella;
+}
+.corazon{
+    grid-area:corazon;
+} 
+.nomada{
+    grid-area: nomada;
+}
+.furia{
+    grid-area: furia;
+}
+.domador{
+    grid-area: domador;
+}
 
+.liyue{
+    grid-area: liyue;
+    padding: 5px;
+    display: grid; 
+    grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: 1fr 2fr 2fr; 
+    gap: 5px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo"
+    "bruja tenacidad petra nobleza"
+    "corredor llamas arcaica caballeria"; 
+    justify-items: center;
+    align-items: center;
+}
+.liyue h2{
+    grid-area: titulo;
+    text-shadow: 0 0 5px white;
+}
+.bruja{
+    grid-area: bruja;
+}
+.corredor{
+    grid-area: corredor;
+}
+.tenacidad{
+    grid-area: tenacidad;
+}
+.llamas{
+    grid-area: llamas;
+}
+.petra{
+    grid-area: petra;
+}
+.arcaica{
+    grid-area: arcaica;
+}
+.nobleza{
+    grid-area: nobleza;
+}
+.caballeria{
+    grid-area: caballeria;
+}
 
+.inazuma{
+    grid-area: inazuma;
+    padding: 5px;
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); 
+    grid-template-rows: 1fr 2fr 2fr; 
+    gap: 5px;
+    grid-template-areas: 
+    "titulo titulo titulo "
+    "emblema perla eco "
+    "reminiscencia cascara deceso "; 
+    justify-items: center;
+    align-items: center;
+}
+.inazuma h2{
+    grid-area: titulo;
+    text-shadow: 0 0 5px white;
+}
+.emblema{
+    grid-area: emblema;
+}
+.reminiscensia{
+    grid-area: reminiscencia;
+}
+.perla{
+    grid-area: perla;
+}
+.cascara{
+    grid-area: cascara;
+}
+.eco{
+    grid-area: eco;
+}
+.deceso{
+    grid-area: deceso;
+}
 
-
-
-
-
-
+main.artefactos section{
+    background-color: rgba(0, 0, 0, 0.384);
+    background-size: 100%;
+}
 
 
 
