@@ -13,7 +13,7 @@ h1{
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 1fr 150px;
+    grid-template-rows: 1fr 4fr 1fr;
     grid-template-areas: 
     "header"
     "main"
@@ -208,7 +208,7 @@ img{
     gap: 5px;
     grid-template-areas: 
     "titulo titulo titulo titulo"
-    "bruja tenacidad petra nobleza"
+    "bruja tenacidad meteorito nobleza"
     "corredor llamas arcaica caballeria"; 
     justify-items: center;
     align-items: center;
@@ -230,7 +230,7 @@ img{
     grid-area: llamas;
 }
 .petra{
-    grid-area: petra;
+    grid-area: meteorito;
 }
 .arcaica{
     grid-area: arcaica;
@@ -286,11 +286,58 @@ main.artefactos section{
     margin-bottom: 10px;
 }
 
+    /*  Media queries   */
 
+@media (min-width:600px){
+    main.artefactos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr;
+        grid-template-areas: 
+        "mondstand liyue inazuma";
+    }
 
+    .mondstand{
+        grid-area: mondstand;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr repeat(4,2fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "gladiador corazon"
+        "orquesta nomada"
+        "sombra furia"
+        "doncella domador";
+    }
+    .liyue{
+        grid-area: liyue;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr repeat(4,2fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "bruja corredor"
+        "llamas tenacidad"
+        "arcaica meteorito"
+        "caballeria nobleza";
+    }
+    .inazuma{
+        grid-area: inazuma;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr repeat(3,2fr);
+        grid-template-areas: 
+        "titulo titulo"
+        "emblema reminiscencia"
+        "cascara perla"
+        "deceso eco";
+    }
+    main.artefactos section{
+        margin-inline: 10px;
+    }
+}
 
-
-
+        /*      Pagina Noticias     */
 
 
 
