@@ -282,6 +282,8 @@ img{
 main.artefactos section{
     background-color: rgba(0, 0, 0, 0.384);
     background-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
