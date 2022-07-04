@@ -13,7 +13,7 @@ h1{
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-rows: 200px 4fr 1fr;
     grid-template-areas: 
     "header"
     "main"
@@ -339,24 +339,81 @@ main.artefactos section{
 
         /*      Pagina Noticias     */
 
+main.noticias{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: 
+    "pr_noticia seg_noticia ter_noticia"
+    "crt_noticia qnt_noticia sxt_noticia"
+    "imp_noticia imp_noticia imp_noticia"
+    "imp_noticia imp_noticia imp_noticia"
+    "spt_noticia oct_noticia nvn_noticia"
+    "dcm_noticia dcp_noticia dsg_noticia"
+    "seg_imp_noticia seg_imp_noticia seg_imp_noticia"
+    "seg_imp_noticia seg_imp_noticia seg_imp_noticia";
+    gap: 15px;
+    padding: 10px;
+}
+main.artefactos section{
+    padding: 5px;
+}
 
+.pr_noticia{
+    grid-area: pr_noticia;
+}
+.seg_noticia{
+    grid-area: seg_noticia;
+}
+.ter_noticia{
+    grid-area: ter_noticia;
+}
+.crt_noticia{
+    grid-area: crt_noticia;
+}
+.qnt_noticia{
+    grid-area: qnt_noticia;
+}
+.sxt_noticia{
+    grid-area: sxt_noticia;
+}
+.imp_noticia{
+    grid-area: imp_noticia;
+}
+.spt_noticia{
+    grid-area: spt_noticia;
+}
+.oct_noticia{
+    grid-area: oct_noticia;
+}
+.nvn_noticia{
+    grid-area: nvn_noticia;
+}
+.dcm_noticia{
+    grid-area: dcm_noticia;
+}
+.dcp_noticia{
+    grid-area: dcp_noticia;
+}
+.dsg_noticia{
+    grid-area: dsg_noticia;
+}
+.seg_imp_noticia{
+    grid-area: seg_imp_noticia;
+}
+@media (min-width:1023px){
+    main.noticias{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "pr_noticia seg_noticia ter_noticia imp_noticia imp_noticia imp_noticia"
+        "crt_noticia qnt_noticia sxt_noticia imp_noticia imp_noticia imp_noticia "
+        "spt_noticia oct_noticia nvn_noticia seg_imp_noticia seg_imp_noticia seg_imp_noticia"
+        "dcm_noticia dcp_noticia dsg_noticia seg_imp_noticia seg_imp_noticia seg_imp_noticia";
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
