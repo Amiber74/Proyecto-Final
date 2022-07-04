@@ -67,6 +67,7 @@ footer{
 @media (min-width:600px){
     h1{
         text-align: center;
+        font-size: 2.5rem;
     }
     header{
         display: flex;
@@ -78,6 +79,7 @@ footer{
         justify-content: space-around;
     }
     li{
+        font-size: 1.5rem;
         border-radius: 10px;
         padding-inline: 5px;
     }
@@ -420,17 +422,7 @@ main.artefactos section{
 
         /*      Pagina de Armas     */
 
-main.armas{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas: 
-    "cn_estrellas"
-    "ct_estrellas";
-}
-
 section.cn_estrellas{
-    grid-area: cn_estrellas;
     display: grid;
     grid-template-columns:repeat(5,1fr) ;
     grid-template-rows: 50px repeat(7,1fr);
@@ -445,10 +437,8 @@ section.cn_estrellas{
     "perforanubes segador pua pacificadora axioma"
     "candado luna oracion pergamino .";
 }
-section.ct_estrellas{
-    grid-area: ct_estrellas;
-}
-section.cn_estrellas h2{
+
+section>h2{
     text-decoration: underline;
     grid-area: titulo;
 }
@@ -546,14 +536,29 @@ main.armas div{
     grid-area:pergamino;
 }
 
+section.ct_estrellas{
+    grid-area: ct_estrellas;
+}
 
 
+    /*  Meida queries   */
 
-
-
-
-
-
+@media(min-width:600px){
+    section.cn_estrellas h2{
+        font-size: 2rem;
+    }
+    section.cn_estrellas{
+        grid-template-columns: repeat(7,1fr) ;
+        grid-template-rows: 50px repeat(5,1fr) ;
+        grid-template-areas:
+        "titulo titulo titulo titulo titulo titulo titulo"
+        "agitador alas aqua amos elegia invernal aquila"
+        "cortador afilada juramento ondulante reflejo rompemontañas desidia"
+        "cornirrojo lapida orgullo oda homa halcon perforanubes"
+        "segador pua pacificadora axioma candado luna oracion"
+        "pergamino . . . . . .";
+    }
+}
 
 
 
