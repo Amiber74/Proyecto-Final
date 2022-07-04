@@ -346,80 +346,125 @@ main.artefactos section{
 
 main.noticias{
     display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(6,1fr);
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(8,1fr);
     grid-template-areas: 
-    "pr_noticia seg_noticia ter_noticia"
-    "crt_noticia qnt_noticia sxt_noticia"
-    "imp_noticia imp_noticia imp_noticia"
-    "imp_noticia imp_noticia imp_noticia"
-    "spt_noticia oct_noticia nvn_noticia"
-    "dcm_noticia dcp_noticia dsg_noticia"
-    "seg_imp_noticia seg_imp_noticia seg_imp_noticia"
-    "seg_imp_noticia seg_imp_noticia seg_imp_noticia";
+    "pr_noticia pr_noticia"
+    "imp_noticia imp_noticia"
+    "imp_noticia imp_noticia"
+    "seg_noticia seg_noticia"
+    "crt_noticia crt_noticia"
+    "seg_imp_noticia seg_imp_noticia"
+    "seg_imp_noticia seg_imp_noticia"
+    "spt_noticia spt_noticia";
     gap: 15px;
     padding: 10px;
 }
-main.artefactos section{
-    padding: 5px;
+main.noticias img{
+    grid-area: imagen;
+}
+main.noticias p{
+    text-align: center;
+    grid-area: texto;
+    font-size: 1.5rem;
+    align-self: center;
+    justify-self: center;
 }
 
 .pr_noticia{
     grid-area: pr_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
 }
 .seg_noticia{
     grid-area: seg_noticia;
-}
-.ter_noticia{
-    grid-area: ter_noticia;
-}
-.crt_noticia{
-    grid-area: crt_noticia;
-}
-.qnt_noticia{
-    grid-area: qnt_noticia;
-}
-.sxt_noticia{
-    grid-area: sxt_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
 }
 .imp_noticia{
     grid-area: imp_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    "imagen"
+    "texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
 }
-.spt_noticia{
-    grid-area: spt_noticia;
+.crt_noticia{
+    grid-area: crt_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
 }
-.oct_noticia{
-    grid-area: oct_noticia;
-}
-.nvn_noticia{
-    grid-area: nvn_noticia;
-}
-.dcm_noticia{
-    grid-area: dcm_noticia;
-}
-.dcp_noticia{
-    grid-area: dcp_noticia;
-}
-.dsg_noticia{
-    grid-area: dsg_noticia;
+.qnt_noticia{
+    grid-area: qnt_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
 }
 .seg_imp_noticia{
     grid-area: seg_imp_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+    "imagen"
+    "texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
 }
-@media (min-width:1023px){
+.spt_noticia{
+    grid-area: spt_noticia;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen texto";
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(56, 56, 56, 0.651);
+}
+@media (min-width:600px){
     main.noticias{
         display: grid;
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(4,1fr);
         grid-template-areas: 
-        "pr_noticia seg_noticia ter_noticia imp_noticia imp_noticia imp_noticia"
-        "crt_noticia qnt_noticia sxt_noticia imp_noticia imp_noticia imp_noticia "
-        "spt_noticia oct_noticia nvn_noticia seg_imp_noticia seg_imp_noticia seg_imp_noticia"
-        "dcm_noticia dcp_noticia dsg_noticia seg_imp_noticia seg_imp_noticia seg_imp_noticia";
+        "pr_noticia pr_noticia imp_noticia imp_noticia"
+        "seg_noticia seg_noticia imp_noticia imp_noticia"
+        "crt_noticia crt_noticia seg_imp_noticia seg_imp_noticia"
+        "spt_noticia spt_noticia seg_imp_noticia seg_imp_noticia";
     }
 
 }
-
         /*      Pagina de Armas     */
 
 section.cn_estrellas{
