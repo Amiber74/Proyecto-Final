@@ -10,6 +10,9 @@ h1{
     text-decoration: underline;
     align-self: center;
 }
+h1 a{
+    color: black;
+}
 body{
     display: grid;
     grid-template-columns: 1fr;
@@ -414,6 +417,141 @@ main.artefactos section{
     }
 
 }
+
+        /*      Pagina de Armas     */
+
+main.armas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "cn_estrellas"
+    "ct_estrellas";
+}
+
+section.cn_estrellas{
+    grid-area: cn_estrellas;
+    display: grid;
+    grid-template-columns:repeat(5,1fr) ;
+    grid-template-rows: 50px repeat(7,1fr);
+    gap:10px;
+    padding: 10px;
+    grid-template-areas: 
+    "titulo titulo titulo titulo titulo"
+    "agitador alas aqua amos elegia"
+    "invernal aquila cortador afilada juramento"
+    "ondulante reflejo rompemontañas desidia cornirrojo"
+    "lapida orgullo oda homa halcon"
+    "perforanubes segador pua pacificadora axioma"
+    "candado luna oracion pergamino .";
+}
+section.ct_estrellas{
+    grid-area: ct_estrellas;
+}
+section.cn_estrellas h2{
+    text-decoration: underline;
+    grid-area: titulo;
+}
+main.armas div{
+    padding: 2px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgba(26, 26, 26, 0.568);
+}
+.agitador{
+    grid-area: agitador;
+}
+.alas{
+    grid-area:alas;
+}
+.aqua{
+    grid-area:aqua;
+}
+.amos{
+    grid-area:amos;
+}
+.elegia{
+    grid-area:elegia;
+}
+.invernal{
+    grid-area:invernal;
+}
+.aquila{
+    grid-area:aquila;
+}
+.cortador{
+    grid-area:cortador;
+}
+.afilada{
+    grid-area:afilada;
+}
+.juramento{
+    grid-area:juramento;
+}
+.ondulante{
+    grid-area:ondulante;
+}
+.reflejo{
+    grid-area:reflejo;
+}
+.rompemontañas{
+    grid-area:rompemontañas;
+}
+.desidia{
+    grid-area:desidia;
+}
+.cornirrojo{
+    grid-area:cornirrojo;
+}
+.lapida{
+    grid-area:lapida;
+}
+.orgullo{
+    grid-area:orgullo;
+}
+.oda{
+    grid-area:oda;
+}
+.homa{
+    grid-area:homa;
+}
+.halcon{
+    grid-area:halcon;
+}
+.perforanubes{
+    grid-area:perforanubes;
+}
+.segador{
+    grid-area:segador;
+}
+.pua{
+    grid-area:pua;
+}
+.pacificadora{
+    grid-area:pacificadora;
+}
+.axioma{
+    grid-area:axioma;
+}
+.candado{
+    grid-area:candado;
+}
+.luna{
+    grid-area:luna;
+}
+.oracion{
+    grid-area:oracion;
+}
+.pergamino{
+    grid-area:pergamino;
+}
+
+
+
+
+
+
+
 
 
 
