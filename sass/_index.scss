@@ -1,9 +1,18 @@
+header{
+    h1{
+        color:white;
+        text-shadow: 0 0 15px black;
+        text-decoration: underline;
+        justify-content: center;
+        align-self: center;
+    }
+}
 main{
     &.index{
         padding: 15px;
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(2,50vw); 
+        grid-template-columns: repeat(2,45vw); 
         grid-template-rows: 60% 40%;
         gap: 2vw 2vw;
         grid-template-areas: 

@@ -31,18 +31,6 @@
     }
 }
 
-   /* Estrucura de la pagina */
-    .grids{
-        padding: 5px;
-        gap: 5px;
-        justify-items: center;
-        align-items: center;
-        h2{
-    
-            grid-area: titulo;
-            text-shadow: 0 0 5px white;
-        }
-    }
     
 .main-artefactos{
     display: grid; 

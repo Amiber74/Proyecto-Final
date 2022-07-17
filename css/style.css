@@ -1,0 +1,18 @@
+/* Error: The target selector was not found.
+ * Use "@extend .grids !optional" to avoid this error.
+ *    ,
+ * 58 |         @extend .grids;
+ *    |         ^^^^^^^^^^^^^^
+ *    '
+ *   sass\_artefactos.scss 58:9  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: The target selector was not found.\aUse "@extend .grids !optional" to avoid this error.\a    \2577 \a 58 \2502          @extend .grids;\d\a    \2502          ^^^^^^^^^^^^^^\a    \2575 \a   sass\\_artefactos.scss 58:9  root stylesheet';
+}
