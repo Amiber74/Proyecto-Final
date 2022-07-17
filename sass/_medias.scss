@@ -1,0 +1,141 @@
+
+    /*  Media queries del Layout    */
+    body{
+        @media (min-width: 480px){
+            header{
+                display: flex;
+                flex-direction: column;
+                h1{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .navegador{
+                    ul{
+                        padding-left: 50px;
+                        display: flex;
+                        flex-direction: row;
+                        li{
+                            text-align: center;
+                            position: relative;
+                            bottom: 35px;
+                            padding-inline: 19%;
+                        }
+                    }
+                }
+            }
+            footer{
+                .informacion{ 
+                    h3{
+                        position: relative;
+                        left: 40px;
+                    }
+                    ul{
+                        position: relative;
+                        right: 40px;
+                        top: 25px;
+                    }
+                }
+                .informacion h3{
+                    position: relative;
+                    left: 40px;
+                }
+                .redes{
+                    h3{
+                        position: relative;
+                        left: 40px;
+                    }
+                    ul{
+                        position: relative;
+                        top:30px;
+                        
+                    }
+                }
+            }
+        }
+    main{
+        &.index{
+            @media (min-width: 480px){
+                padding: 15px;
+                display: grid;
+                gap: 0px 5px;
+                width: 100%;
+                grid-template-columns: repeat(8,1fr);
+                grid-template-rows: repeat(5,1fr);
+                grid-template-areas:
+                "banner banner . . . . evento evento"
+                "banner banner . . . . evento evento"     
+                "banner banner trailer trailer trailer trailer evento evento"
+                "banner banner trailer trailer trailer trailer evento evento"
+                "banner banner trailer trailer trailer trailer evento evento";
+                .banner{
+                    grid-area: banner;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .eventos{
+                    grid-area: evento;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .trailer{
+                    grid-area: trailer;
+                    iframe{
+                        width: 100%;
+                        height: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:600px){
+    .main-artefactos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows:1fr;
+        grid-template-areas: 
+        "mondstand liyue inazuma";
+        section{
+            margin-inline: 10px;
+        }
+        .mondstand{
+            grid-area: mondstand;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr repeat(4,2fr);
+            grid-template-areas: 
+            "titulo titulo"
+            "gladiador corazon"
+            "orquesta nomada"
+            "sombra furia"
+            "doncella domador";
+        }
+        .liyue{
+            grid-area: liyue;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 1fr repeat(4,2fr);
+            grid-template-areas: 
+            "titulo titulo"
+            "bruja corredor"
+            "llamas tenacidad"
+            "arcaica meteorito"
+            "caballeria nobleza";
+        }
+        .inazuma{
+            grid-area: inazuma;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr repeat(3,2fr);
+            grid-template-areas: 
+            "titulo titulo"
+            "emblema reminiscencia"
+            "cascara perla"
+            "deceso eco";
+        }
+    }
+}

@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Andika', sans-serif ;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "head"
+    "main"
+    "footer";
+    header{
+        grid-area: head;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+}
+header{
+    background-color: #254692;
+    color: white;
+    text-shadow: 0 0 15px black;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content:space-around;
+    align-content: center;
+    h1{
+        display:inline-block;
+        position: relative;
+        right: 30px;
+        align-self: center;
+        justify-self: center;
+        font-size: 1.5rem;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 0 5px black;
+        list-style-type: none;
+    }
+    .navegador{
+        display:inline-block;
+        position: relative;
+        left:30px;
+        bottom: 10px;
+        ul{
+            position: relative;
+            top: 5vh;
+            justify-items: center;
+            align-items: center;
+            font-size: 1rem;
+
+        }
+    }
+}
+main{
+    background-image: url(../img/fondo-pagina);
+    background-size: cover;
+}
+
+footer{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    background-color:rgba(71, 61, 139, 0.651) ;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
