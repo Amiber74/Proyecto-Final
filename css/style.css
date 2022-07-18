@@ -1,18 +1,623 @@
-/* Error: The target selector was not found.
- * Use "@extend .grids !optional" to avoid this error.
- *    ,
- * 58 |         @extend .grids;
- *    |         ^^^^^^^^^^^^^^
- *    '
- *   sass\_artefactos.scss 58:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: The target selector was not found.\aUse "@extend .grids !optional" to avoid this error.\a    \2577 \a 58 \2502          @extend .grids;\d\a    \2502          ^^^^^^^^^^^^^^\a    \2575 \a   sass\\_artefactos.scss 58:9  root stylesheet';
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Andika", sans-serif;
 }
+
+body {
+  display: grid;
+  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "head" "main" "footer";
+}
+body header {
+  grid-area: head;
+}
+body main {
+  grid-area: main;
+}
+body footer {
+  grid-area: footer;
+}
+
+header {
+  background-color: #254692;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-around;
+  align-content: center;
+}
+header a {
+  align-self: center;
+  justify-self: center;
+}
+header a h1 {
+  font-size: 3rem;
+  text-decoration: underline;
+  color: white;
+  text-shadow: 0 0 15px black;
+}
+header .navegador {
+  align-self: center;
+}
+header .navegador ul a {
+  color: white;
+  text-shadow: 0 0 15px black;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+main {
+  background-image: url(../img/fondo-pagina);
+  background-size: cover;
+  width: 100vw;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgba(71, 61, 139, 0.651);
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 0 0 15px black;
+  text-decoration: underline;
+  justify-content: center;
+  align-self: center;
+}
+
+main.index {
+  padding: 15px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 45vw);
+  grid-template-rows: 60% 40%;
+  gap: 2vw 2vw;
+  grid-template-areas: "banner evento" "trailer trailer";
+}
+main .banner {
+  grid-area: banner;
+}
+main .banner img {
+  width: 100%;
+  height: 100%;
+}
+main .eventos {
+  grid-area: evento;
+}
+main .eventos img {
+  width: 100%;
+  height: 100%;
+}
+main .trailer {
+  grid-area: trailer;
+}
+main .trailer iframe {
+  width: 100%;
+  height: 90%;
+}
+
+/*Bucle*/
+.main-artefactos .mondstand .mpos_1 img {
+  grid-area: pos_1;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_2 img {
+  grid-area: pos_2;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_3 img {
+  grid-area: pos_3;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_4 img {
+  grid-area: pos_4;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_5 img {
+  grid-area: pos_5;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_6 img {
+  grid-area: pos_6;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_7 img {
+  grid-area: pos_7;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .mondstand .mpos_8 img {
+  grid-area: pos_8;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_1 img {
+  grid-area: pos_1;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_2 img {
+  grid-area: pos_2;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_3 img {
+  grid-area: pos_3;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_4 img {
+  grid-area: pos_4;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_5 img {
+  grid-area: pos_5;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_6 img {
+  grid-area: pos_6;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_7 img {
+  grid-area: pos_7;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .liyue .lpos_8 img {
+  grid-area: pos_8;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_1 img {
+  grid-area: pos_1;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_2 img {
+  grid-area: pos_2;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_3 img {
+  grid-area: pos_3;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_4 img {
+  grid-area: pos_4;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_5 img {
+  grid-area: pos_5;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_6 img {
+  grid-area: pos_6;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_7 img {
+  grid-area: pos_7;
+  width: 100%;
+  height: 100%;
+}
+.main-artefactos .inazuma .ipos_8 img {
+  grid-area: pos_8;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estrucura de la pagina */
+.grids, .armas .cn_estrellas, .main-artefactos .inazuma, .main-artefactos .liyue, .main-artefactos .mondstand {
+  padding: 5px;
+  gap: 5px;
+  justify-items: center;
+  align-items: center;
+}
+.grids h2, .armas .cn_estrellas h2, .main-artefactos .inazuma h2, .main-artefactos .liyue h2, .main-artefactos .mondstand h2 {
+  grid-area: titulo;
+  text-shadow: 0 0 5px white;
+}
+
+.main-artefactos {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  grid-template-areas: "mondstand" "liyue" "inazuma";
+  /*seccion*/
+  /*seccion*/
+  /*seccion*/
+}
+.main-artefactos section {
+  background-color: rgba(0, 0, 0, 0.384);
+  background-size: 100%;
+}
+.main-artefactos .mondstand {
+  grid-area: mondstand;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: "titulo titulo titulo titulo" "pos_1 pos_2 pos_3 pos_4" "pos_5 pos_6 pos_7 pos_8";
+}
+.main-artefactos .liyue {
+  grid-area: liyue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: "titulo titulo titulo titulo" "pos_1 pos_2 pos_3 pos_4" "pos_5 pos_6 pos_7 pos_8";
+}
+.main-artefactos .inazuma {
+  grid-area: inazuma;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: "titulo titulo titulo " "pos_1 pos_2 pos_3 " "pos_4 pos_5 pos_6";
+}
+
+.armas .cn_estrellas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(11, 1fr);
+  grid-template-areas: "titulo titulo titulo  " "Apos_1 Apos_2 Apos_3 " "Apos_4 Apos_5 Apos_6 " "Apos_7 Apos_8 Apos_9 " "Apos_10 Apos_11 Apos_12 " "Apos_13 Apos_14 Apos_15 " "Apos_16 Apos_17 Apos_18 " "Apos_19 Apos_20 Apos_21 " "Apos_22 Apos_23 Apos_24" "Apos_25 Apos_26 Apos_27" "Apos_28 Apos_29 .";
+  background-color: rgba(0, 0, 0, 0.384);
+  background-size: 100%;
+  margin: 10px 0px;
+  gap: 5px;
+}
+.armas .cn_estrellas div {
+  width: 130px;
+  height: 130px;
+}
+.armas .cn_estrellas h2 {
+  grid-area: titulo;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.armas .cn_estrellas .Apos_0 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_0 img {
+  grid-area: Apos_0;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_1 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_1 img {
+  grid-area: Apos_1;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_2 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_2 img {
+  grid-area: Apos_2;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_3 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_3 img {
+  grid-area: Apos_3;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_4 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_4 img {
+  grid-area: Apos_4;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_5 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_5 img {
+  grid-area: Apos_5;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_6 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_6 img {
+  grid-area: Apos_6;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_7 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_7 img {
+  grid-area: Apos_7;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_8 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_8 img {
+  grid-area: Apos_8;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_9 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_9 img {
+  grid-area: Apos_9;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_10 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_10 img {
+  grid-area: Apos_10;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_11 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_11 img {
+  grid-area: Apos_11;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_12 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_12 img {
+  grid-area: Apos_12;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_13 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_13 img {
+  grid-area: Apos_13;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_14 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_14 img {
+  grid-area: Apos_14;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_15 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_15 img {
+  grid-area: Apos_15;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_16 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_16 img {
+  grid-area: Apos_16;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_17 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_17 img {
+  grid-area: Apos_17;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_18 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_18 img {
+  grid-area: Apos_18;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_19 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_19 img {
+  grid-area: Apos_19;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_20 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_20 img {
+  grid-area: Apos_20;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_21 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_21 img {
+  grid-area: Apos_21;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_22 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_22 img {
+  grid-area: Apos_22;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_23 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_23 img {
+  grid-area: Apos_23;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_24 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_24 img {
+  grid-area: Apos_24;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_25 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_25 img {
+  grid-area: Apos_25;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_26 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_26 img {
+  grid-area: Apos_26;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_27 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_27 img {
+  grid-area: Apos_27;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_28 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_28 img {
+  grid-area: Apos_28;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+.armas .cn_estrellas .Apos_29 {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.armas .cn_estrellas .Apos_29 img {
+  grid-area: Apos_29;
+  height: 126px;
+  width: 126px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+
+.personajes {
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "anemo" "cryo" "electro" "geo" "hydro" "pyro";
+}
+.personajes .anemo {
+  grid-area: anemo;
+}
+.personajes .cryo {
+  grid-area: cryo;
+}
+.personajes .electro {
+  grid-area: electro;
+}
+.personajes .geo {
+  grid-area: geo;
+}
+.personajes .hydro {
+  grid-area: hydro;
+}
+.personajes .pyro {
+  grid-area: pyro;
+}
+
+/*# sourceMappingURL=style.css.map */

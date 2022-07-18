@@ -1,0 +1,30 @@
+.personajes{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr );
+    grid-template-areas: 
+    "anemo"
+    "cryo"
+    "electro"
+    "geo"
+    "hydro"
+    "pyro";
+    
+    .anemo{
+        grid-area: anemo;
+    }
+    .cryo{
+        grid-area: cryo;
+    }
+    .electro{
+        grid-area: electro;
+    }
+    .geo{
+        grid-area: geo;
+    }
+    .hydro{
+        grid-area:hydro
+    }
+    .pyro{
+        grid-area: pyro;
+    }
+}

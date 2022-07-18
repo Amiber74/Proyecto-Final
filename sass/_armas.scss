@@ -1,5 +1,45 @@
-.armas{
+.armas {
     .cn_estrellas{
-        
+        div{
+            width: 130px;
+            height: 130px;
+        }
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(11,1fr);
+        grid-template-areas: 
+        "titulo titulo titulo  " 
+        "Apos_1 Apos_2 Apos_3 "
+        "Apos_4 Apos_5 Apos_6 "
+        "Apos_7 Apos_8 Apos_9 "
+        "Apos_10 Apos_11 Apos_12 "
+        "Apos_13 Apos_14 Apos_15 "
+        "Apos_16 Apos_17 Apos_18 "
+        "Apos_19 Apos_20 Apos_21 "
+        "Apos_22 Apos_23 Apos_24"
+        "Apos_25 Apos_26 Apos_27"
+        "Apos_28 Apos_29 .";
+        @extend .grids;
+        background-color: rgba(0, 0, 0, 0.384);
+        background-size: 100%;
+        margin: 10px 0px;
+        gap: 5px;
+        h2{
+            grid-area: titulo;
+            font-size: 2rem;
+            text-decoration: underline;
+        }
+        @for $i from 0 to 30{
+            .Apos_#{$i}{
+                border: 2px solid black;
+                border-radius: 5px;
+                img{
+                    grid-area: Apos_#{$i};
+                    height: 126px;
+                    width: 126px;
+                    background-color: rgba(128, 128, 128, 0.39);
+                }
+            }
+        }
     }
 }
