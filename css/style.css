@@ -596,16 +596,135 @@ main .trailer iframe {
   background-color: rgba(128, 128, 128, 0.39);
 }
 
+/*  EXTENDS  */
+.detalles, .personajes .pyro, .personajes .anemo {
+  background-color: rgba(0, 0, 0, 0.384);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 10px;
+  margin: 15px 0px;
+  gap: 5px;
+}
+
+.titulo, .personajes .pyro h2, .personajes .anemo h2 {
+  grid-area: titulo;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: black;
+  text-shadow: 0 0 15px white;
+}
+
+.div, .personajes .pyro .p_10, .personajes .pyro .p_9, .personajes .pyro .p_8, .personajes .pyro .p_7, .personajes .pyro .p_6, .personajes .pyro .p_5, .personajes .pyro .p_4, .personajes .pyro .p_3, .personajes .pyro .p_2, .personajes .pyro .p_1, .personajes .anemo .p_6, .personajes .anemo .p_5, .personajes .anemo .p_4, .personajes .anemo .p_3, .personajes .anemo .p_2, .personajes .anemo .p_1 {
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: rgba(128, 128, 128, 0.267);
+  justify-self: center;
+  align-self: center;
+}
+
+/*  PAGINA  */
 .personajes {
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 1fr);
-  grid-template-areas: "anemo" "cryo" "electro" "geo" "hydro" "pyro";
+  grid-template-areas: "anemo" "pyro" "electro" "geo" "hydro" "pyro";
 }
 .personajes .anemo {
   grid-area: anemo;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "titulo titulo titulo" "p_1 p_2 p_3" "p_4 p_5 p_6";
+  background-image: url(../Img/personajes/anemo/Anemo.png);
 }
-.personajes .cryo {
-  grid-area: cryo;
+.personajes .anemo .p_1 img {
+  grid-area: p_1;
+  width: 100%;
+  height: 100%;
+}
+.personajes .anemo .p_2 img {
+  grid-area: p_2;
+  width: 100%;
+  height: 100%;
+}
+.personajes .anemo .p_3 img {
+  grid-area: p_3;
+  width: 100%;
+  height: 100%;
+}
+.personajes .anemo .p_4 img {
+  grid-area: p_4;
+  width: 100%;
+  height: 100%;
+}
+.personajes .anemo .p_5 img {
+  grid-area: p_5;
+  width: 100%;
+  height: 100%;
+}
+.personajes .anemo .p_6 img {
+  grid-area: p_6;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro {
+  grid-area: pyro;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" ". p_9 p_10 .";
+  background-image: url(../Img/personajes/pyro/Pyro.png);
+}
+.personajes .pyro .p_1 img {
+  grid-area: p_1;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_2 img {
+  grid-area: p_2;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_3 img {
+  grid-area: p_3;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_4 img {
+  grid-area: p_4;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_5 img {
+  grid-area: p_5;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_6 img {
+  grid-area: p_6;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_7 img {
+  grid-area: p_7;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_8 img {
+  grid-area: p_8;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_9 img {
+  grid-area: p_9;
+  width: 100%;
+  height: 100%;
+}
+.personajes .pyro .p_10 img {
+  grid-area: p_10;
+  width: 100%;
+  height: 100%;
 }
 .personajes .electro {
   grid-area: electro;
@@ -616,8 +735,8 @@ main .trailer iframe {
 .personajes .hydro {
   grid-area: hydro;
 }
-.personajes .pyro {
-  grid-area: pyro;
+.personajes .cryo {
+  grid-area: cryo;
 }
 
 /*# sourceMappingURL=style.css.map */
