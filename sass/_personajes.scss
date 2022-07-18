@@ -18,10 +18,10 @@
 }
 .div{
     border: 2px solid black;
-                border-radius: 5px;
-                background-color: rgba(128, 128, 128, 0.267);
-                justify-self: center;
-                align-self: center;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.267);
+    justify-self: center;
+    align-self: center;
 }
     /*  PAGINA  */
 .personajes{
@@ -69,7 +69,7 @@
         "titulo titulo titulo titulo"
         "p_1 p_2 p_3 p_4"
         "p_5 p_6 p_7 p_8"
-        ". p_9 p_10 .";
+        "p_9 p_10 . . ";
         background-image: url(../Img/personajes/pyro/Pyro.png);
         @extend .detalles;
         h2  {
@@ -86,16 +86,107 @@
             }
         }
     }
-    .electro{
-        grid-area: electro;
-    }
-    .geo{
-        grid-area: geo;
-    }
+    
     .hydro{
-        grid-area:hydro
+        grid-area:hydro;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "p_1 p_2 p_3 p_4"
+        "p_5 p_6 p_7 .";
+        background-image: url(../Img/personajes/hydro/Hydro.png);
+        @extend .detalles;
+        h2{
+            @extend .titulo;
+        }
+        @for $i from 1 to 8 {
+            .p_#{$i}{
+                @extend .div;
+                img{
+                    grid-area:p_#{$i};
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
     .cryo{
         grid-area: cryo;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "p_1 p_2 p_3 p_4"
+        "p_5 p_6 p_7 p_8"
+        "p_9 p_10 . .";
+        background-image: url(../Img/personajes/cryo/Cryo.png);
+        @extend .detalles;
+        h2{
+            @extend .titulo;
+        }
+        @for $i from 1 to 11 {
+            .p_#{$i}{
+                @extend .div;
+                img{
+                    grid-area:p_#{$i};
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .electro{
+        grid-area: electro;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "p_1 p_2 p_3 p_4"
+        "p_5 p_6 p_7 p_8"
+        "p_9 . . .";
+        background-image: url(../Img/personajes/electro/Electro.png);
+        @extend .detalles;
+        h2{
+            @extend .titulo;
+        }
+        @for $i from 1 to 10{
+            .p_#{$i}{
+                @extend .div;
+                img{
+                    grid-area:p_#{$i};
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .geo{
+        grid-area: geo;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "titulo titulo titulo titulo"
+        "p_1 p_2 p_3 p_4"
+        "p_5 p_6 p_7 .";
+        background-image: url(../Img/personajes/geo/Geo.png);
+        @extend .detalles;
+        h2{
+            @extend .titulo;
+        }
+        @for $i from 1 to 8{
+            .p_#{$i}{
+                @extend .div;
+                img{
+                    grid-area: p_#{$i};
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
     }
 }
