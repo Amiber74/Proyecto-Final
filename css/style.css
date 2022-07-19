@@ -107,120 +107,192 @@ main .trailer iframe {
 }
 
 /*Bucle*/
+.main-artefactos .mondstand .mpos_1 {
+  padding: 10px;
+}
 .main-artefactos .mondstand .mpos_1 img {
   grid-area: pos_1;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .mondstand .mpos_2 {
+  padding: 10px;
 }
 .main-artefactos .mondstand .mpos_2 img {
   grid-area: pos_2;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .mondstand .mpos_3 {
+  padding: 10px;
+}
 .main-artefactos .mondstand .mpos_3 img {
   grid-area: pos_3;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .mondstand .mpos_4 {
+  padding: 10px;
 }
 .main-artefactos .mondstand .mpos_4 img {
   grid-area: pos_4;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .mondstand .mpos_5 {
+  padding: 10px;
+}
 .main-artefactos .mondstand .mpos_5 img {
   grid-area: pos_5;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .mondstand .mpos_6 {
+  padding: 10px;
 }
 .main-artefactos .mondstand .mpos_6 img {
   grid-area: pos_6;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .mondstand .mpos_7 {
+  padding: 10px;
+}
 .main-artefactos .mondstand .mpos_7 img {
   grid-area: pos_7;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .mondstand .mpos_8 {
+  padding: 10px;
 }
 .main-artefactos .mondstand .mpos_8 img {
   grid-area: pos_8;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .liyue .lpos_1 {
+  padding: 10px;
+}
 .main-artefactos .liyue .lpos_1 img {
   grid-area: pos_1;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .liyue .lpos_2 {
+  padding: 10px;
 }
 .main-artefactos .liyue .lpos_2 img {
   grid-area: pos_2;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .liyue .lpos_3 {
+  padding: 10px;
+}
 .main-artefactos .liyue .lpos_3 img {
   grid-area: pos_3;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .liyue .lpos_4 {
+  padding: 10px;
 }
 .main-artefactos .liyue .lpos_4 img {
   grid-area: pos_4;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .liyue .lpos_5 {
+  padding: 10px;
+}
 .main-artefactos .liyue .lpos_5 img {
   grid-area: pos_5;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .liyue .lpos_6 {
+  padding: 10px;
 }
 .main-artefactos .liyue .lpos_6 img {
   grid-area: pos_6;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .liyue .lpos_7 {
+  padding: 10px;
+}
 .main-artefactos .liyue .lpos_7 img {
   grid-area: pos_7;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .liyue .lpos_8 {
+  padding: 10px;
 }
 .main-artefactos .liyue .lpos_8 img {
   grid-area: pos_8;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .inazuma .ipos_1 {
+  padding: 10px;
+}
 .main-artefactos .inazuma .ipos_1 img {
   grid-area: pos_1;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .inazuma .ipos_2 {
+  padding: 10px;
 }
 .main-artefactos .inazuma .ipos_2 img {
   grid-area: pos_2;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .inazuma .ipos_3 {
+  padding: 10px;
+}
 .main-artefactos .inazuma .ipos_3 img {
   grid-area: pos_3;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .inazuma .ipos_4 {
+  padding: 10px;
 }
 .main-artefactos .inazuma .ipos_4 img {
   grid-area: pos_4;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .inazuma .ipos_5 {
+  padding: 10px;
+}
 .main-artefactos .inazuma .ipos_5 img {
   grid-area: pos_5;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .inazuma .ipos_6 {
+  padding: 10px;
 }
 .main-artefactos .inazuma .ipos_6 img {
   grid-area: pos_6;
   width: 100%;
   height: 100%;
 }
+.main-artefactos .inazuma .ipos_7 {
+  padding: 10px;
+}
 .main-artefactos .inazuma .ipos_7 img {
   grid-area: pos_7;
   width: 100%;
   height: 100%;
+}
+.main-artefactos .inazuma .ipos_8 {
+  padding: 10px;
 }
 .main-artefactos .inazuma .ipos_8 img {
   grid-area: pos_8;
@@ -230,7 +302,7 @@ main .trailer iframe {
 
 /* Estrucura de la pagina */
 .grids, .armas .cn_estrellas, .main-artefactos .inazuma, .main-artefactos .liyue, .main-artefactos .mondstand {
-  padding: 5px;
+  padding: 50px;
   gap: 5px;
   justify-items: center;
   align-items: center;
@@ -1019,6 +1091,376 @@ main .trailer iframe {
   grid-area: p_7;
   width: 100%;
   height: 100%;
+}
+
+/*  Media queries del Layout    */
+body {
+  /*  INDEX   */
+}
+@media (min-width: 600px) {
+  body header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "titulo" "navegador";
+  }
+  body header h1 {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  body header .navegador {
+    grid-area: navegador;
+  }
+  body header .navegador ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body header .navegador ul li {
+    font-size: 1.5rem;
+  }
+  body header .navegador ul li:hover {
+    background-color: #2655c5;
+    border-radius: 15px;
+    padding: 3px 6px;
+  }
+  body footer {
+    height: 100vh;
+  }
+  body footer h2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 480px) {
+  body main.index {
+    padding: 15px;
+    display: grid;
+    gap: 0px 5px;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "banner banner . . . . evento evento" "banner banner . . . . evento evento" "banner banner trailer trailer trailer trailer evento evento" "banner banner trailer trailer trailer trailer evento evento" "banner banner trailer trailer trailer trailer evento evento";
+  }
+  body main.index .banner {
+    grid-area: banner;
+  }
+  body main.index .banner img {
+    width: 100%;
+    height: 100%;
+  }
+  body main.index .eventos {
+    grid-area: evento;
+  }
+  body main.index .eventos img {
+    width: 100%;
+    height: 100%;
+  }
+  body main.index .trailer {
+    grid-area: trailer;
+  }
+  body main.index .trailer iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*  ARTEFACTOS  */
+@media (min-width: 600px) {
+  .main-artefactos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "mondstand liyue inazuma";
+  }
+  .main-artefactos .mondstand {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "titulo titulo" "pos_1 pos_2" "pos_3 pos_4" "pos_5 pos_6" "pos_7 pos_8";
+  }
+  .main-artefactos .liyue {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: "titulo titulo" "pos_1 pos_2" "pos_3 pos_4" "pos_5 pos_6" "pos_7 pos_8";
+  }
+  .main-artefactos .inazuma {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4.1fr);
+    grid-template-areas: "titulo titulo" "pos_1 pos_2" "pos_3 pos_4" "pos_5 pos_6";
+  }
+}
+/*  ARMAS */
+@media (min-width: 600px) {
+  .armas .cn_estrellas {
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas: "titulo titulo titulo titulo" "Apos_1 Apos_2 Apos_3 Apos_4" "Apos_5 Apos_6 Apos_7 Apos_8" "Apos_9 Apos_10 Apos_11 Apos_12" "Apos_13 Apos_14 Apos_15 Apos_16" "Apos_17 Apos_18 Apos_19 Apos_20" "Apos_21 Apos_22 Apos_23 Apos_24" "Apos_25 Apos_26 Apos_27 Apos_28" "Apos_29 . . .";
+  }
+}
+@media (min-width: 600px) {
+  .anemo .p_1 {
+    width: 120px;
+    height: 120px;
+  }
+  .anemo .p_2 {
+    width: 120px;
+    height: 120px;
+  }
+  .anemo .p_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .anemo .p_4 {
+    width: 120px;
+    height: 120px;
+  }
+  .anemo .p_5 {
+    width: 120px;
+    height: 120px;
+  }
+  .anemo .p_6 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_1 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_2 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_4 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_5 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_6 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_7 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_8 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_9 {
+    width: 120px;
+    height: 120px;
+  }
+  .pyro .p_10 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_1 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_2 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_4 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_5 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_6 {
+    width: 120px;
+    height: 120px;
+  }
+  .hydro .p_7 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_1 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_2 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_4 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_5 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_6 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_7 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_8 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_9 {
+    width: 120px;
+    height: 120px;
+  }
+  .cryo .p_10 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_1 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_2 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_4 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_5 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_6 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_7 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_8 {
+    width: 120px;
+    height: 120px;
+  }
+  .electro .p_9 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_1 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_2 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_3 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_4 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_5 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_6 {
+    width: 120px;
+    height: 120px;
+  }
+  .geo .p_7 {
+    width: 120px;
+    height: 120px;
+  }
+}
+/*  NOTICIAS    */
+@media (min-width: 600px) {
+  .noticias .n_1 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img img titulo titulo titulo" "img img titulo titulo titulo";
+  }
+  .noticias .n_1 h2 {
+    margin-top: 20vw;
+    text-align: center;
+    top: 50px;
+  }
+  .noticias .n_2 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img img titulo titulo titulo" "img img titulo titulo titulo";
+  }
+  .noticias .n_2 h2 {
+    margin-top: 20vw;
+    text-align: center;
+    top: 50px;
+  }
+  .noticias .n_3 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img img titulo titulo titulo" "img img titulo titulo titulo";
+  }
+  .noticias .n_3 h2 {
+    margin-top: 20vw;
+    text-align: center;
+    top: 50px;
+  }
+  .noticias .n_4 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img img titulo titulo titulo" "img img titulo titulo titulo";
+  }
+  .noticias .n_4 h2 {
+    margin-top: 20vw;
+    text-align: center;
+    top: 50px;
+  }
+  .noticias .n_5 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img img titulo titulo titulo" "img img titulo titulo titulo";
+  }
+  .noticias .n_5 h2 {
+    margin-top: 20vw;
+    text-align: center;
+    top: 50px;
+  }
+  .noticias .n_6 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img img titulo titulo titulo" "img img titulo titulo titulo";
+  }
+  .noticias .n_6 h2 {
+    margin-top: 20vw;
+    text-align: center;
+    top: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

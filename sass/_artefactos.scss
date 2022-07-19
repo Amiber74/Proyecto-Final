@@ -5,6 +5,7 @@
     .mondstand{
         @for $i from 1 to 9 {
             .mpos_#{$i}{
+                padding: 10px;
                 img{
                     grid-area:pos_#{$i};
                     width: 100%;
@@ -16,6 +17,7 @@
     .liyue{
         @for $i from 1 to 9 {
             .lpos_#{$i}{
+                padding: 10px;
                 img{
                     grid-area:pos_#{$i} ;
                     width: 100%;
@@ -27,6 +29,7 @@
     .inazuma{
         @for $i from 1 to 9 {
             .ipos_#{$i}{
+                padding: 10px;
                 img{
                     grid-area: pos_#{$i};
                     width: 100%;
@@ -39,7 +42,7 @@
 
    /* Estrucura de la pagina */
     .grids{
-        padding: 5px;
+        padding: 50px;
         gap: 5px;
         justify-items: center;
         align-items: center;
