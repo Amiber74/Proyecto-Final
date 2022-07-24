@@ -65,7 +65,8 @@ footer{
     display: flex;
     flex-direction:row;
     justify-content: space-around;
-    background-color:rgba(71, 61, 139, 0.651) ;
+    height: 100%;
+    background-color:rgba(71, 61, 139, 0.651);
     a{
         text-decoration: none;
         color: black;

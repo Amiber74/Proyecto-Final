@@ -60,6 +60,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  height: 100%;
   background-color: rgba(71, 61, 139, 0.651);
 }
 footer a {
@@ -1126,7 +1127,7 @@ body {
     padding: 3px 6px;
   }
   body footer {
-    height: 100vh;
+    height: 100%;
   }
   body footer h2 {
     font-size: 1.5rem;
