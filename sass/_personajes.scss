@@ -44,7 +44,7 @@
         "titulo titulo titulo"
         "p_1 p_2 p_3"
         "p_4 p_5 p_6";
-        background-image: url(../Img/personajes/anemo/Anemo.png);
+        background-image: url(../Img/personajes/anemo/Anemo.webp);
         @extend .detalles;
         h2{
             @extend .titulo;
@@ -70,7 +70,7 @@
         "p_1 p_2 p_3 p_4"
         "p_5 p_6 p_7 p_8"
         "p_9 p_10 . . ";
-        background-image: url(../Img/personajes/pyro/Pyro.png);
+        background-image: url(../Img/personajes/pyro/Pyro.webp);
         @extend .detalles;
         h2  {
             @extend .titulo;
@@ -96,7 +96,7 @@
         "titulo titulo titulo titulo"
         "p_1 p_2 p_3 p_4"
         "p_5 p_6 p_7 .";
-        background-image: url(../Img/personajes/hydro/Hydro.png);
+        background-image: url(../Img/personajes/hydro/Hydro.webp);
         @extend .detalles;
         h2{
             @extend .titulo;
@@ -122,7 +122,7 @@
         "p_1 p_2 p_3 p_4"
         "p_5 p_6 p_7 p_8"
         "p_9 p_10 . .";
-        background-image: url(../Img/personajes/cryo/Cryo.png);
+        background-image: url(../Img/personajes/cryo/Cryo.webp);
         @extend .detalles;
         h2{
             @extend .titulo;
@@ -148,7 +148,7 @@
         "p_1 p_2 p_3 p_4"
         "p_5 p_6 p_7 p_8"
         "p_9 . . .";
-        background-image: url(../Img/personajes/electro/Electro.png);
+        background-image: url(../Img/personajes/electro/Electro.webp);
         @extend .detalles;
         h2{
             @extend .titulo;
@@ -173,7 +173,7 @@
         "titulo titulo titulo titulo"
         "p_1 p_2 p_3 p_4"
         "p_5 p_6 p_7 .";
-        background-image: url(../Img/personajes/geo/Geo.png);
+        background-image: url(../Img/personajes/geo/Geo.webp);
         @extend .detalles;
         h2{
             @extend .titulo;
