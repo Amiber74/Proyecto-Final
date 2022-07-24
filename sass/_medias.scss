@@ -125,8 +125,8 @@
 @media (min-width: 600px){
     .armas{
         .cn_estrellas{
-            align-items: center;
-            justify-content: center;
+        align-items: center;
+        justify-content: center;
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: repeat(9,1fr);
         grid-template-areas: 
@@ -192,6 +192,24 @@
         }
     }
 }
+
+@media (min-width: 950px){
+.armas{
+    .cn_estrellas{
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(7,1fr);
+        grid-template-areas: 
+        "titulo titulo titulo titulo titulo"
+        "Apos_1 Apos_2 Apos_3 Apos_4 Apos_5"
+        "Apos_6 Apos_7 Apos_8 Apos_9 Apos_10"
+        "Apos_11 Apos_12 Apos_13 Apos_14 Apos_15"
+        "Apos_16 Apos_17 Apos_18 Apos_19 Apos_20"
+        "Apos_21 Apos_22 Apos_23 Apos_24 Apos_25"
+        "Apos_26 Apos_27 Apos_28 Apos_29 .";
+    }
+}
+}
+
 
     /*  NOTICIAS    */
 @media (min-width: 600px){

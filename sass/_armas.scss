@@ -3,6 +3,9 @@
         div{
             width: 130px;
             height: 130px;
+            &:hover{
+                background-color: rgba(128, 128, 128, 0.507);
+            }
         }
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -23,7 +26,7 @@
         background-color: rgba(0, 0, 0, 0.384);
         background-size: 100%;
         margin: 10px 0px;
-        gap: 5px;
+        gap: 30px 10px;
         h2{
             grid-area: titulo;
             font-size: 2rem;
@@ -35,8 +38,8 @@
                 border-radius: 5px;
                 img{
                     grid-area: Apos_#{$i};
-                    height: 126px;
                     width: 126px;
+                    height: 126px;
                     background-color: rgba(128, 128, 128, 0.39);
                 }
             }
