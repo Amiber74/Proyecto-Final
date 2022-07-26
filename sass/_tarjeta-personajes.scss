@@ -1,0 +1,206 @@
+.centrar{
+    justify-self: center;
+    align-self: center;
+}
+
+.tarjeta_personaje{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 150px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    
+    header{
+        grid-area: header;
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100px 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: "boton nombre";
+        a{
+            grid-area: boton;
+            font-size: 1rem;
+            border: 3px solid black;
+            border-radius: 8px;
+            justify-self: center;
+            padding: 5px;
+            text-decoration: none;
+            color: black;
+        }
+        h1{
+            grid-area: nombre;
+            font-size: 2rem;
+            text-decoration: none;
+            @extend .centrar;
+        }
+        background-color:rgba(71, 61, 139);
+    }
+
+    main{
+        display: grid;
+        width: 100%;
+        gap: 10px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr repeat(2,1.5fr) 1fr 1.5fr repeat(2,2fr);
+        grid-template-areas: 
+        "img"
+        "info"
+        "artefactos"
+        "prioridades"
+        "talentos"
+        "armas"
+        "sinergia";
+        .personaje{
+            grid-area: img;
+            width: 90%;
+            height: 90%;
+            @extend .centrar;
+
+        }
+        .info{
+            grid-area: info;
+            text-align: center;
+            align-self: center;
+            font-size: 1.2rem;
+        }
+        .p_artefactos{
+            grid-area: artefactos;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "titulo" "img";
+            p{
+                grid-area: titulo;
+                text-align: center;
+                align-self: center;
+                font-size: 1.2rem;
+            }
+            img{
+                grid-area: img;
+                padding: 5px;
+                background-color:darkgrey;
+                border-radius: 100px;
+                @extend .centrar;
+            }
+        }
+        .stats{
+            grid-area: prioridades;
+            display: grid;
+            grid-template-columns: repeat(2,1fr) 1.2fr;
+            grid-template-rows: 3fr 1fr;
+            grid-template-areas: "reloj caliz corona""texto texto texto";
+            .reloj{
+                grid-area:reloj;
+                @extend .centrar;
+            }
+            .caliz{
+                grid-area: caliz;
+                @extend .centrar;
+                img{
+                    padding-left: 10px;
+                }
+            }
+            .corona{
+                grid-area: corona;
+                @extend .centrar;
+                img{
+                    padding-left: 40px;
+                }
+            }
+            p.texto{
+                grid-area: texto;
+                text-align: center;
+                font-size: 1.2rem;
+                strong{
+                    border: 1px solid black;
+                    padding: 2px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .talentos{
+            grid-area: talentos;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+            grid-template-areas:
+            "talento talento talento"
+            "t1 t2 t3"
+            "pasiva pasiva pasiva" 
+            "p1 p2 p3";
+            .talento{
+                grid-area: talento;
+                text-align: center;
+            }
+            .t1{
+                grid-area: t1;
+                @extend .centrar;
+            }
+            .t2{
+                grid-area: t2;
+                @extend .centrar;
+            }
+            .t3{
+                grid-area: t3;
+                @extend .centrar;
+            }
+            .pasivas{
+                grid-area: pasiva;
+                text-align: center;
+            }
+            .p1{
+                grid-area: p1;
+                @extend .centrar;
+            }
+            .p2{
+                grid-area: p2;
+                @extend .centrar;
+            }
+            .p3{
+                grid-area: p3;
+                @extend .centrar;
+            }
+        }
+        .armas{
+            grid-area: armas;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas: "titulo""armas";
+            h2{
+                grid-area: titulo; 
+                font-size: 1.5rem;
+                @extend .centrar;
+            }
+            .img{
+                grid-area: armas;
+                @extend .centrar;
+            }
+        }
+        .grupos{
+            grid-area: sinergia;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 3fr;
+            grid-template-areas: "titulo""img";
+            h2{
+                grid-area: titulo;
+                text-align: center;
+                align-self: center;
+                font-size: 1.5rem;
+            }
+            .img{
+                grid-area: img;
+                @extend .centrar;
+            }
+        }
+        /*background-color: rgba(0, 0, 0, 0.600);*/
+    }
+    /*background-image: url(../Img/home/fondo-pagina);
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}

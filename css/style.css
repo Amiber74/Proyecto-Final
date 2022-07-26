@@ -5,23 +5,14 @@
   font-family: "Andika", sans-serif;
 }
 
-body {
+.pagina {
   display: grid;
   grid-template-rows: 200px 1fr 200px;
   grid-template-columns: 100%;
   grid-template-areas: "head" "main" "footer";
 }
-body header {
+.pagina header {
   grid-area: head;
-}
-body main {
-  grid-area: main;
-}
-body footer {
-  grid-area: footer;
-}
-
-header {
   background-color: #254692;
   width: 100%;
   display: flex;
@@ -30,33 +21,33 @@ header {
   justify-content: space-around;
   align-content: center;
 }
-header a {
+.pagina header a {
   align-self: center;
   justify-self: center;
 }
-header a h1 {
+.pagina header a h1 {
   font-size: 3rem;
   text-decoration: underline;
   color: white;
   text-shadow: 0 0 15px black;
 }
-header .navegador {
+.pagina header .navegador {
   align-self: center;
 }
-header .navegador ul a {
+.pagina header .navegador ul a {
   color: white;
   text-shadow: 0 0 15px black;
   text-decoration: none;
   list-style-type: none;
 }
-
-main {
+.pagina main {
+  grid-area: main;
   background-image: url(../img/home/fondo-pagina);
   background-size: cover;
   width: 100%;
 }
-
-footer {
+.pagina footer {
+  grid-area: footer;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -64,7 +55,7 @@ footer {
   width: 100%;
   background-color: rgba(71, 61, 139, 0.651);
 }
-footer a {
+.pagina footer a {
   text-decoration: none;
   color: black;
 }
@@ -1099,47 +1090,222 @@ main .trailer iframe {
   height: 100%;
 }
 
+.centrar, .tarjeta_personaje main .grupos .img, .tarjeta_personaje main .armas .img, .tarjeta_personaje main .armas h2, .tarjeta_personaje main .talentos .p3, .tarjeta_personaje main .talentos .p2, .tarjeta_personaje main .talentos .p1, .tarjeta_personaje main .talentos .t3, .tarjeta_personaje main .talentos .t2, .tarjeta_personaje main .talentos .t1, .tarjeta_personaje main .stats .corona, .tarjeta_personaje main .stats .caliz, .tarjeta_personaje main .stats .reloj, .tarjeta_personaje main .p_artefactos img, .tarjeta_personaje main .personaje, .tarjeta_personaje header h1 {
+  justify-self: center;
+  align-self: center;
+}
+
+.tarjeta_personaje {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 150px;
+  grid-template-areas: "header" "main" "footer";
+  /*background-image: url(../Img/home/fondo-pagina);
+  background-repeat: no-repeat;
+  background-size: cover;*/
+}
+.tarjeta_personaje header {
+  grid-area: header;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas: "boton nombre";
+  background-color: rgb(71, 61, 139);
+}
+.tarjeta_personaje header a {
+  grid-area: boton;
+  font-size: 1rem;
+  border: 3px solid black;
+  border-radius: 8px;
+  justify-self: center;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+}
+.tarjeta_personaje header h1 {
+  grid-area: nombre;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.tarjeta_personaje main {
+  display: grid;
+  width: 100%;
+  gap: 10px 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr repeat(2, 1.5fr) 1fr 1.5fr repeat(2, 2fr);
+  grid-template-areas: "img" "info" "artefactos" "prioridades" "talentos" "armas" "sinergia";
+  /*background-color: rgba(0, 0, 0, 0.600);*/
+}
+.tarjeta_personaje main .personaje {
+  grid-area: img;
+  width: 90%;
+  height: 90%;
+}
+.tarjeta_personaje main .info {
+  grid-area: info;
+  text-align: center;
+  align-self: center;
+  font-size: 1.2rem;
+}
+.tarjeta_personaje main .p_artefactos {
+  grid-area: artefactos;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "titulo" "img";
+}
+.tarjeta_personaje main .p_artefactos p {
+  grid-area: titulo;
+  text-align: center;
+  align-self: center;
+  font-size: 1.2rem;
+}
+.tarjeta_personaje main .p_artefactos img {
+  grid-area: img;
+  padding: 5px;
+  background-color: darkgrey;
+  border-radius: 100px;
+}
+.tarjeta_personaje main .stats {
+  grid-area: prioridades;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 1.2fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas: "reloj caliz corona" "texto texto texto";
+}
+.tarjeta_personaje main .stats .reloj {
+  grid-area: reloj;
+}
+.tarjeta_personaje main .stats .caliz {
+  grid-area: caliz;
+}
+.tarjeta_personaje main .stats .caliz img {
+  padding-left: 10px;
+}
+.tarjeta_personaje main .stats .corona {
+  grid-area: corona;
+}
+.tarjeta_personaje main .stats .corona img {
+  padding-left: 40px;
+}
+.tarjeta_personaje main .stats p.texto {
+  grid-area: texto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.tarjeta_personaje main .stats p.texto strong {
+  border: 1px solid black;
+  padding: 2px;
+  border-radius: 10px;
+}
+.tarjeta_personaje main .talentos {
+  grid-area: talentos;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
+  grid-template-areas: "talento talento talento" "t1 t2 t3" "pasiva pasiva pasiva" "p1 p2 p3";
+}
+.tarjeta_personaje main .talentos .talento {
+  grid-area: talento;
+  text-align: center;
+}
+.tarjeta_personaje main .talentos .t1 {
+  grid-area: t1;
+}
+.tarjeta_personaje main .talentos .t2 {
+  grid-area: t2;
+}
+.tarjeta_personaje main .talentos .t3 {
+  grid-area: t3;
+}
+.tarjeta_personaje main .talentos .pasivas {
+  grid-area: pasiva;
+  text-align: center;
+}
+.tarjeta_personaje main .talentos .p1 {
+  grid-area: p1;
+}
+.tarjeta_personaje main .talentos .p2 {
+  grid-area: p2;
+}
+.tarjeta_personaje main .talentos .p3 {
+  grid-area: p3;
+}
+.tarjeta_personaje main .armas {
+  grid-area: armas;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "titulo" "armas";
+}
+.tarjeta_personaje main .armas h2 {
+  grid-area: titulo;
+  font-size: 1.5rem;
+}
+.tarjeta_personaje main .armas .img {
+  grid-area: armas;
+}
+.tarjeta_personaje main .grupos {
+  grid-area: sinergia;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
+  grid-template-areas: "titulo" "img";
+}
+.tarjeta_personaje main .grupos h2 {
+  grid-area: titulo;
+  text-align: center;
+  align-self: center;
+  font-size: 1.5rem;
+}
+.tarjeta_personaje main .grupos .img {
+  grid-area: img;
+}
+
 /*  Media queries del Layout    */
-body {
+.pagina {
   /*  INDEX   */
 }
 @media (min-width: 600px) {
-  body header {
+  .pagina header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "titulo" "navegador";
   }
-  body header h1 {
+  .pagina header h1 {
     grid-area: titulo;
     text-align: center;
     font-size: 2.5rem;
   }
-  body header .navegador {
+  .pagina header .navegador {
     grid-area: navegador;
   }
-  body header .navegador ul {
+  .pagina header .navegador ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
-  body header .navegador ul li {
+  .pagina header .navegador ul li {
     font-size: 1.5rem;
   }
-  body header .navegador ul li:hover {
+  .pagina header .navegador ul li:hover {
     background-color: #2655c5;
     border-radius: 15px;
     padding: 3px 6px;
   }
-  body footer {
+  .pagina footer {
     height: 100%;
   }
-  body footer h2 {
+  .pagina footer h2 {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 480px) {
-  body main.index {
+  .pagina main.index {
     padding: 15px;
     display: grid;
     gap: 0px 5px;
@@ -1149,24 +1315,24 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "banner banner . . . . evento evento" "banner banner . . . . evento evento" "banner banner trailer trailer trailer trailer evento evento" "banner banner trailer trailer trailer trailer evento evento" "banner banner trailer trailer trailer trailer evento evento";
   }
-  body main.index .banner {
+  .pagina main.index .banner {
     grid-area: banner;
   }
-  body main.index .banner img {
+  .pagina main.index .banner img {
     width: 100%;
     height: 100%;
   }
-  body main.index .eventos {
+  .pagina main.index .eventos {
     grid-area: evento;
   }
-  body main.index .eventos img {
+  .pagina main.index .eventos img {
     width: 100%;
     height: 100%;
   }
-  body main.index .trailer {
+  .pagina main.index .trailer {
     grid-area: trailer;
   }
-  body main.index .trailer iframe {
+  .pagina main.index .trailer iframe {
     width: 100%;
     height: 100%;
   }

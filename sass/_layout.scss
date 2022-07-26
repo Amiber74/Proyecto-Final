@@ -5,7 +5,7 @@
     font-family: 'Andika', sans-serif ;
 }
 
-body{
+.pagina{
     display: grid;
     grid-template-rows: 200px 1fr 200px;
     grid-template-columns: 100%;
@@ -15,66 +15,57 @@ body{
     "footer";
     header{
         grid-area: head;
-    }
-    main{
-        grid-area: main;
-    }
-    footer{
-        grid-area: footer;
-    }
-}
-header{
-    background-color: #254692;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    justify-content:space-around;
-    align-content: center;
-    a{
-        align-self: center;
-        justify-self: center;
-        h1{
-            font-size: 3rem;
-            text-decoration: underline;
-            color: white;
-            text-shadow: 0 0 15px black;
-        }
-    }
-    
-    .navegador{
-        align-self: center;
-        ul{
-            a{
+        
+        background-color: #254692;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        justify-content:space-around;
+        align-content: center;
+        a{
+            align-self: center;
+            justify-self: center;
+            h1{
+                font-size: 3rem;
+                text-decoration: underline;
                 color: white;
                 text-shadow: 0 0 15px black;
-                text-decoration: none;
-                list-style-type: none;
+            }
+        }
+        
+        .navegador{
+            align-self: center;
+            ul{
+                a{
+                    color: white;
+                    text-shadow: 0 0 15px black;
+                    text-decoration: none;
+                    list-style-type: none;
+                }
             }
         }
     }
-    
-}
-main{
-    background-image: url(../img/home/fondo-pagina);
-    background-size: cover;
-    width:100%;
-}
-
-footer{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    height: 100%;
-    width:100%;
-    background-color:rgba(71, 61, 139, 0.651);
-    a{
-        text-decoration: none;
-        color: black;
+    main{
+        grid-area: main;            
+        background-image: url(../img/home/fondo-pagina);
+        background-size: cover;
+        width:100%;
+    }
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        height: 100%;
+        width:100%;
+        background-color:rgba(71, 61, 139, 0.651);
+        a{
+            text-decoration: none;
+            color: black;
+        }
     }
 }
-
-
 
 
 
