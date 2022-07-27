@@ -1,7 +1,8 @@
 
     /*  Media queries del Layout    */
-    .pagina{
-        @media (min-width: 600px){
+
+@media (min-width: 600px){
+        .pagina{
             header{
                 display: grid;
                 grid-template-columns: 1fr;
@@ -81,6 +82,7 @@
         }
     }
 }
+
 
 /*  ARTEFACTOS  */
 @media (min-width: 600px){

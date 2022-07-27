@@ -2,6 +2,10 @@
     justify-self: center;
     align-self: center;
 }
+@mixin ajuste-imagen ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
 
 .tarjeta_personaje{
     display: grid;
@@ -77,14 +81,20 @@
                 grid-area: titulo;
                 text-align: center;
                 align-self: center;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
             }
-            img{
+            .img_a{
                 grid-area: img;
-                padding: 5px;
-                background-color:darkgrey;
-                border-radius: 100px;
                 @extend .centrar;
+                img{
+                padding: 5px;
+                margin: 5px;
+                background-color:darkgrey;
+                border-radius: 20px;
+                
+                width: 80px;
+                height: 80px;
+                }
             }
         }
         .stats{
@@ -95,21 +105,15 @@
             grid-template-areas: "reloj caliz corona""texto texto texto";
             .reloj{
                 grid-area:reloj;
-                @extend .centrar;
+                text-align: center;
             }
             .caliz{
                 grid-area: caliz;
-                @extend .centrar;
-                img{
-                    padding-left: 10px;
-                }
+                text-align: center;
             }
             .corona{
                 grid-area: corona;
-                @extend .centrar;
-                img{
-                    padding-left: 40px;
-                }
+                text-align: center;
             }
             p.texto{
                 grid-area: texto;
@@ -139,14 +143,17 @@
             .t1{
                 grid-area: t1;
                 @extend .centrar;
+                @include ajuste-imagen(70px,70px);
             }
             .t2{
                 grid-area: t2;
                 @extend .centrar;
+                @include ajuste-imagen(70px,70px);
             }
             .t3{
                 grid-area: t3;
                 @extend .centrar;
+                @include ajuste-imagen(70px,70px);
             }
             .pasivas{
                 grid-area: pasiva;
@@ -155,14 +162,17 @@
             .p1{
                 grid-area: p1;
                 @extend .centrar;
+                @include ajuste-imagen(70px,70px);
             }
             .p2{
                 grid-area: p2;
                 @extend .centrar;
+                @include ajuste-imagen(70px,70px);
             }
             .p3{
                 grid-area: p3;
                 @extend .centrar;
+                @include ajuste-imagen(70px,70px);
             }
         }
         .armas{
@@ -179,6 +189,13 @@
             .img{
                 grid-area: armas;
                 @extend .centrar;
+                padding-inline: 10%;
+                img{
+                    padding: 5px;
+                    margin: 5px;
+                    background-color:darkgrey;
+                    border-radius: 20px;
+                }
             }
         }
         .grupos{
@@ -186,7 +203,7 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 3fr;
-            grid-template-areas: "titulo""img";
+            grid-template-areas: "titulo" "img";
             h2{
                 grid-area: titulo;
                 text-align: center;
@@ -195,7 +212,13 @@
             }
             .img{
                 grid-area: img;
-                @extend .centrar;
+                text-align: center;
+                img{
+                    padding: 5px;
+                    margin: 5px;
+                    background-color:darkgrey;
+                    border-radius: 20px;
+                }
             }
         }
         /*background-color: rgba(0, 0, 0, 0.600);*/

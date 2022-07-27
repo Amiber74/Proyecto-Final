@@ -346,7 +346,7 @@ main .trailer iframe {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(11, 1fr);
   grid-template-areas: "titulo titulo titulo  " "Apos_1 Apos_2 Apos_3 " "Apos_4 Apos_5 Apos_6 " "Apos_7 Apos_8 Apos_9 " "Apos_10 Apos_11 Apos_12 " "Apos_13 Apos_14 Apos_15 " "Apos_16 Apos_17 Apos_18 " "Apos_19 Apos_20 Apos_21 " "Apos_22 Apos_23 Apos_24" "Apos_25 Apos_26 Apos_27" "Apos_28 Apos_29 .";
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(0, 0, 0, 0.397);
   background-size: 100%;
   margin: 10px 0px;
   gap: 30px 10px;
@@ -1090,7 +1090,7 @@ main .trailer iframe {
   height: 100%;
 }
 
-.centrar, .tarjeta_personaje main .grupos .img, .tarjeta_personaje main .armas .img, .tarjeta_personaje main .armas h2, .tarjeta_personaje main .talentos .p3, .tarjeta_personaje main .talentos .p2, .tarjeta_personaje main .talentos .p1, .tarjeta_personaje main .talentos .t3, .tarjeta_personaje main .talentos .t2, .tarjeta_personaje main .talentos .t1, .tarjeta_personaje main .stats .corona, .tarjeta_personaje main .stats .caliz, .tarjeta_personaje main .stats .reloj, .tarjeta_personaje main .p_artefactos img, .tarjeta_personaje main .personaje, .tarjeta_personaje header h1 {
+.centrar, .tarjeta_personaje main .armas .img, .tarjeta_personaje main .armas h2, .tarjeta_personaje main .talentos .p3, .tarjeta_personaje main .talentos .p2, .tarjeta_personaje main .talentos .p1, .tarjeta_personaje main .talentos .t3, .tarjeta_personaje main .talentos .t2, .tarjeta_personaje main .talentos .t1, .tarjeta_personaje main .p_artefactos .img_a, .tarjeta_personaje main .personaje, .tarjeta_personaje header h1 {
   justify-self: center;
   align-self: center;
 }
@@ -1161,13 +1161,18 @@ main .trailer iframe {
   grid-area: titulo;
   text-align: center;
   align-self: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
-.tarjeta_personaje main .p_artefactos img {
+.tarjeta_personaje main .p_artefactos .img_a {
   grid-area: img;
+}
+.tarjeta_personaje main .p_artefactos .img_a img {
   padding: 5px;
+  margin: 5px;
   background-color: darkgrey;
-  border-radius: 100px;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
 }
 .tarjeta_personaje main .stats {
   grid-area: prioridades;
@@ -1178,18 +1183,15 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .stats .reloj {
   grid-area: reloj;
+  text-align: center;
 }
 .tarjeta_personaje main .stats .caliz {
   grid-area: caliz;
-}
-.tarjeta_personaje main .stats .caliz img {
-  padding-left: 10px;
+  text-align: center;
 }
 .tarjeta_personaje main .stats .corona {
   grid-area: corona;
-}
-.tarjeta_personaje main .stats .corona img {
-  padding-left: 40px;
+  text-align: center;
 }
 .tarjeta_personaje main .stats p.texto {
   grid-area: texto;
@@ -1214,12 +1216,18 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .talentos .t1 {
   grid-area: t1;
+  width: 70px;
+  height: 70px;
 }
 .tarjeta_personaje main .talentos .t2 {
   grid-area: t2;
+  width: 70px;
+  height: 70px;
 }
 .tarjeta_personaje main .talentos .t3 {
   grid-area: t3;
+  width: 70px;
+  height: 70px;
 }
 .tarjeta_personaje main .talentos .pasivas {
   grid-area: pasiva;
@@ -1227,12 +1235,18 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .talentos .p1 {
   grid-area: p1;
+  width: 70px;
+  height: 70px;
 }
 .tarjeta_personaje main .talentos .p2 {
   grid-area: p2;
+  width: 70px;
+  height: 70px;
 }
 .tarjeta_personaje main .talentos .p3 {
   grid-area: p3;
+  width: 70px;
+  height: 70px;
 }
 .tarjeta_personaje main .armas {
   grid-area: armas;
@@ -1247,6 +1261,13 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .armas .img {
   grid-area: armas;
+  padding-inline: 10%;
+}
+.tarjeta_personaje main .armas .img img {
+  padding: 5px;
+  margin: 5px;
+  background-color: darkgrey;
+  border-radius: 20px;
 }
 .tarjeta_personaje main .grupos {
   grid-area: sinergia;
@@ -1263,12 +1284,16 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .grupos .img {
   grid-area: img;
+  text-align: center;
+}
+.tarjeta_personaje main .grupos .img img {
+  padding: 5px;
+  margin: 5px;
+  background-color: darkgrey;
+  border-radius: 20px;
 }
 
 /*  Media queries del Layout    */
-.pagina {
-  /*  INDEX   */
-}
 @media (min-width: 600px) {
   .pagina header {
     display: grid;
@@ -1303,9 +1328,10 @@ main .trailer iframe {
   .pagina footer h2 {
     font-size: 1.5rem;
   }
+  /*  INDEX   */
 }
-@media (min-width: 480px) {
-  .pagina main.index {
+@media (min-width: 600px) and (min-width: 480px) {
+  main.index {
     padding: 15px;
     display: grid;
     gap: 0px 5px;
@@ -1315,29 +1341,28 @@ main .trailer iframe {
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "banner banner . . . . evento evento" "banner banner . . . . evento evento" "banner banner trailer trailer trailer trailer evento evento" "banner banner trailer trailer trailer trailer evento evento" "banner banner trailer trailer trailer trailer evento evento";
   }
-  .pagina main.index .banner {
+  main.index .banner {
     grid-area: banner;
   }
-  .pagina main.index .banner img {
+  main.index .banner img {
     width: 100%;
     height: 100%;
   }
-  .pagina main.index .eventos {
+  main.index .eventos {
     grid-area: evento;
   }
-  .pagina main.index .eventos img {
+  main.index .eventos img {
     width: 100%;
     height: 100%;
   }
-  .pagina main.index .trailer {
+  main.index .trailer {
     grid-area: trailer;
   }
-  .pagina main.index .trailer iframe {
+  main.index .trailer iframe {
     width: 100%;
     height: 100%;
   }
 }
-
 /*  ARTEFACTOS  */
 @media (min-width: 600px) {
   .main-artefactos {
