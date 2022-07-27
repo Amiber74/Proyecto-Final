@@ -195,6 +195,7 @@
                     margin: 5px;
                     background-color:darkgrey;
                     border-radius: 20px;
+                    @include ajuste-imagen(92px,92px)
                 }
             }
         }

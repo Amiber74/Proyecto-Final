@@ -1268,6 +1268,8 @@ main .trailer iframe {
   margin: 5px;
   background-color: darkgrey;
   border-radius: 20px;
+  width: 92px;
+  height: 92px;
 }
 .tarjeta_personaje main .grupos {
   grid-area: sinergia;
