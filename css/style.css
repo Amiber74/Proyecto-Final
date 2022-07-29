@@ -348,12 +348,12 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo  " "Apos_1 Apos_2 Apos_3 " "Apos_4 Apos_5 Apos_6 " "Apos_7 Apos_8 Apos_9 " "Apos_10 Apos_11 Apos_12 " "Apos_13 Apos_14 Apos_15 " "Apos_16 Apos_17 Apos_18 " "Apos_19 Apos_20 Apos_21 " "Apos_22 Apos_23 Apos_24" "Apos_25 Apos_26 Apos_27" "Apos_28 Apos_29 .";
   background-color: rgba(0, 0, 0, 0.397);
   background-size: 100%;
-  margin: 10px 0px;
-  gap: 30px 10px;
+  padding: 5px 0px;
+  gap: 10px 5px;
 }
 .armas .cn_estrellas div {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
 }
 .armas .cn_estrellas div:hover {
   background-color: rgba(128, 128, 128, 0.507);
@@ -369,8 +369,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_0 img {
   grid-area: Apos_0;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_1 {
@@ -379,8 +379,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_1 img {
   grid-area: Apos_1;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_2 {
@@ -389,8 +389,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_2 img {
   grid-area: Apos_2;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_3 {
@@ -399,8 +399,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_3 img {
   grid-area: Apos_3;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_4 {
@@ -409,8 +409,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_4 img {
   grid-area: Apos_4;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_5 {
@@ -419,8 +419,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_5 img {
   grid-area: Apos_5;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_6 {
@@ -429,8 +429,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_6 img {
   grid-area: Apos_6;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_7 {
@@ -439,8 +439,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_7 img {
   grid-area: Apos_7;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_8 {
@@ -449,8 +449,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_8 img {
   grid-area: Apos_8;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_9 {
@@ -459,8 +459,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_9 img {
   grid-area: Apos_9;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_10 {
@@ -469,8 +469,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_10 img {
   grid-area: Apos_10;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_11 {
@@ -479,8 +479,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_11 img {
   grid-area: Apos_11;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_12 {
@@ -489,8 +489,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_12 img {
   grid-area: Apos_12;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_13 {
@@ -499,8 +499,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_13 img {
   grid-area: Apos_13;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_14 {
@@ -509,8 +509,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_14 img {
   grid-area: Apos_14;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_15 {
@@ -519,8 +519,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_15 img {
   grid-area: Apos_15;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_16 {
@@ -529,8 +529,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_16 img {
   grid-area: Apos_16;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_17 {
@@ -539,8 +539,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_17 img {
   grid-area: Apos_17;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_18 {
@@ -549,8 +549,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_18 img {
   grid-area: Apos_18;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_19 {
@@ -559,8 +559,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_19 img {
   grid-area: Apos_19;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_20 {
@@ -569,8 +569,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_20 img {
   grid-area: Apos_20;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_21 {
@@ -579,8 +579,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_21 img {
   grid-area: Apos_21;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_22 {
@@ -589,8 +589,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_22 img {
   grid-area: Apos_22;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_23 {
@@ -599,8 +599,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_23 img {
   grid-area: Apos_23;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_24 {
@@ -609,8 +609,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_24 img {
   grid-area: Apos_24;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_25 {
@@ -619,8 +619,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_25 img {
   grid-area: Apos_25;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_26 {
@@ -629,8 +629,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_26 img {
   grid-area: Apos_26;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_27 {
@@ -639,8 +639,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_27 img {
   grid-area: Apos_27;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_28 {
@@ -649,8 +649,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_28 img {
   grid-area: Apos_28;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 .armas .cn_estrellas .Apos_29 {
@@ -659,8 +659,8 @@ main .trailer iframe {
 }
 .armas .cn_estrellas .Apos_29 img {
   grid-area: Apos_29;
-  width: 126px;
-  height: 126px;
+  width: 116px;
+  height: 116px;
   background-color: rgba(128, 128, 128, 0.39);
 }
 
