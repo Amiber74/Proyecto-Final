@@ -1,15 +1,13 @@
     /*Bucle*/
-    
-
 .main-artefactos{
     .mondstand{
         @for $i from 1 to 9 {
             .mpos_#{$i}{
-                padding: 10px;
+                padding: 5px;
                 img{
                     grid-area:pos_#{$i};
-                    width: 100%;
-                    height: 100%;
+                    width: 80px;
+                    height: 80px;
                 }
             }
         }
@@ -17,23 +15,23 @@
     .liyue{
         @for $i from 1 to 9 {
             .lpos_#{$i}{
-                padding: 10px;
+                padding: 5px;
                 img{
                     grid-area:pos_#{$i} ;
-                    width: 100%;
-                    height: 100%;
+                    width: 80px;
+                    height: 80px;
                 }
             }
         }
     }
     .inazuma{
-        @for $i from 1 to 9 {
+        @for $i from 1 to 7 {
             .ipos_#{$i}{
-                padding: 10px;
+                padding: 5px;
                 img{
                     grid-area: pos_#{$i};
-                    width: 100%;
-                    height: 100%;
+                    width: 80px;
+                    height: 80px;
                 }
             }
         }
@@ -42,14 +40,14 @@
 
    /* Estrucura de la pagina */
     .grids{
-        padding: 50px;
+        padding: 25px;
         gap: 5px;
         justify-items: center;
         align-items: center;
         h2{
-    
             grid-area: titulo;
-            text-shadow: 0 0 5px white;
+            color: white;
+            text-shadow: 0 0 10px black;
         }
     }
     

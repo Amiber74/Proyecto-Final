@@ -87,13 +87,16 @@
 /*  ARTEFACTOS  */
 @media (min-width: 600px){
     .main-artefactos{
+        h2{
+            font-size: 2.5rem;
+        }
         display: grid;
         grid-template-columns: repeat(3,1fr);
         grid-template-rows: 1fr;
         grid-template-areas: "mondstand liyue inazuma";
         .mondstand{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(5,1fr);
+            grid-template-rows:1fr repeat(4,2fr);
             grid-template-areas: 
             "titulo titulo"
             "pos_1 pos_2"
@@ -104,7 +107,7 @@
         .liyue{
             display: grid;
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(5,1fr);
+            grid-template-rows: 1fr repeat(4,2fr);
             grid-template-areas: 
             "titulo titulo"
             "pos_1 pos_2"
@@ -114,7 +117,7 @@
         }
         .inazuma{
             grid-template-columns: repeat(2,1fr);
-            grid-template-rows: repeat(4.1fr);
+            grid-template-rows: 1fr repeat(3,2fr);
             grid-template-areas: 
             "titulo titulo"
             "pos_1 pos_2"
@@ -250,11 +253,13 @@
             }
             main{
                 grid-template-columns: repeat(8,1fr);
-                grid-template-rows: repeat(4,1fr);
+                grid-template-rows: repeat(5,1fr);
+                height: 1320px;
                 grid-template-areas: 
                 "img img img  artefactos artefactos artefactos info info"
                 "img img img  prioridades prioridades prioridades constelacion constelacion"
                 "img img img  prioridades prioridades prioridades constelacion constelacion"
+                "talentos talentos armas armas armas sinergia sinergia sinergia"
                 "talentos talentos armas armas armas sinergia sinergia sinergia";
                 .stats{
                     .reloj{
@@ -314,6 +319,7 @@
                 }
                 .info{
                     margin: 20px;
+                    font-size: 1.5rem;
                 }
                 .talentos{
                     .talento{
@@ -321,31 +327,36 @@
                         margin: 10px;
                     }
                     .t1{
-                        @include ajuste-imagen(80px,80px);
+                        @include ajuste-imagen(100px,100px);
                     }
                     .t2{
-                        @include ajuste-imagen(80px,80px);
+                        @include ajuste-imagen(100px,100px);
                     }
                     .t3{
-                        @include ajuste-imagen(80px,80px);
+                        @include ajuste-imagen(100px,100px);
                     }
                     .pasivas{
                         font-size: 1.9rem;
                         margin: 10px;
                     }
                     .p1{
-                        @include ajuste-imagen(80px,80px);
+                        @include ajuste-imagen(100px,100px);
                     }
                     .p2{
-                        @include ajuste-imagen(80px,80px);
+                        @include ajuste-imagen(100px,100px);
                     }
                     .p3{
-                        @include ajuste-imagen(80px,80px);
+                        @include ajuste-imagen(100px,100px);
                     }
                 }
                 .armas{
                     h2{
                         font-size: 2rem;
+                    }
+                    .img{
+                        img{
+                            @include ajuste-imagen (180px,180px)
+                        }
                     }
                 }
                 .grupos{
@@ -353,7 +364,7 @@
                         font-size: 2rem;
                     }
                     img{
-                        @include ajuste-imagen(100px, 100px);
+                        @include ajuste-imagen(110px, 110px);
                     }
                 }
                 .constelacion{

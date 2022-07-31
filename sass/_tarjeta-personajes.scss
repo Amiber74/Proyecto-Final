@@ -70,7 +70,9 @@
             padding: 25px;
             width: 90%;
             height: 90%;
+            @extend .fondo;
             @extend .centrar;
+            background-color: rgba(0, 0, 0, 0.600);
         }
         .info{
             grid-area: info;
