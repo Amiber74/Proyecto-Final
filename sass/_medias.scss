@@ -232,3 +232,142 @@
         }
     }
 }
+
+    /*  Tarjetas de Personajes*/
+    @media (min-width: 700px){
+        .tarjeta_personaje{
+            header{
+                grid-template-columns: repeat(6,1fr);
+                grid-template-rows: 1fr;
+                grid-template-areas: 
+                "boton nombre nombre nombre nombre";
+                a{
+                    font-size: 2rem;
+                }
+                h1{
+                    font-size: 3.5rem;
+                }
+            }
+            main{
+                grid-template-columns: repeat(8,1fr);
+                grid-template-rows: repeat(4,1fr);
+                grid-template-areas: 
+                "img img img  artefactos artefactos artefactos info info"
+                "img img img  prioridades prioridades prioridades constelacion constelacion"
+                "img img img  prioridades prioridades prioridades constelacion constelacion"
+                "talentos talentos armas armas armas sinergia sinergia sinergia";
+                .stats{
+                    .reloj{
+                        justify-self: center;
+                        align-self: center; 
+                        padding: 28px 30px;
+                        margin: 5px;
+                        @include ajuste-imagen(90%,200px);
+                        img{
+                            @include ajuste-imagen(100px,100px);
+                        }
+                        p{
+                            font-size:1.6rem;
+                        }
+                    }
+                    .caliz{
+                        justify-self: center;
+                        align-self: center; 
+                        padding: 15px 25px;
+                        margin: 5px;
+                        @include ajuste-imagen(90%,200px);
+                        img{
+                            @include ajuste-imagen(100px,100px);
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                    .corona{
+                        justify-self: center;
+                        align-self: center;  
+                        padding: 15px 25px;
+                        margin: 5px;
+                        @include ajuste-imagen(90%,200px);
+                        img{
+                            @include ajuste-imagen(100px,100px);
+                        }
+                        p{ 
+                            font-size: 1.6rem;
+                        }
+                    }  
+                    p.texto{
+                        font-size: 2rem;
+                    }
+                }
+                .p_artefactos{
+                    p{
+                        font-size: 2rem;
+                    }
+                    .img_a{
+                        width: 100%;
+                        text-align: center;
+                        img{
+                            @include ajuste-imagen(120px,120px);
+                        }
+                    }
+                }
+                .info{
+                    margin: 20px;
+                }
+                .talentos{
+                    .talento{
+                        font-size: 1.9rem;
+                        margin: 10px;
+                    }
+                    .t1{
+                        @include ajuste-imagen(80px,80px);
+                    }
+                    .t2{
+                        @include ajuste-imagen(80px,80px);
+                    }
+                    .t3{
+                        @include ajuste-imagen(80px,80px);
+                    }
+                    .pasivas{
+                        font-size: 1.9rem;
+                        margin: 10px;
+                    }
+                    .p1{
+                        @include ajuste-imagen(80px,80px);
+                    }
+                    .p2{
+                        @include ajuste-imagen(80px,80px);
+                    }
+                    .p3{
+                        @include ajuste-imagen(80px,80px);
+                    }
+                }
+                .armas{
+                    h2{
+                        font-size: 2rem;
+                    }
+                }
+                .grupos{
+                    h2{
+                        font-size: 2rem;
+                    }
+                    img{
+                        @include ajuste-imagen(100px, 100px);
+                    }
+                }
+                .constelacion{
+                    h2{
+                        font-size: 2rem;
+                    }
+                    img{
+                        @include ajuste-imagen(80%, 80%);
+                    }
+                }
+            }
+            background-image: url(../img/home/fondo_pagina_compu);
+            background-size: cover;
+            height: 100%;
+            width:100%;
+        }
+    }

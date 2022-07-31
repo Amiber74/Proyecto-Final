@@ -6,6 +6,12 @@
     width: $width;
     height: $heigth;
 }
+.fondo{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.452);
+    margin-inline: 10px;
+}
 
 .tarjeta_personaje{
     display: grid;
@@ -49,27 +55,30 @@
         width: 100%;
         gap: 10px 0px;
         grid-template-columns: 1fr;
-        grid-template-rows: 3fr repeat(2,1.5fr) 1fr 1.5fr 2fr 3fr;
+        grid-template-rows: 3fr repeat(2,1.5fr) 1fr 1.5fr 1.5fr 2fr 3fr;
         grid-template-areas: 
         "img"
         "info"
         "artefactos"
         "prioridades"
         "talentos"
+        "constelacion"
         "armas"
         "sinergia";
         .personaje{
             grid-area: img;
+            padding: 25px;
             width: 90%;
             height: 90%;
             @extend .centrar;
-
         }
         .info{
             grid-area: info;
+            @extend .fondo;
             text-align: center;
             align-self: center;
-            font-size: 1.2rem;
+            padding: 50px;
+            font-size: 1.3rem;
         }
         .p_artefactos{
             grid-area: artefactos;
@@ -81,7 +90,8 @@
                 grid-area: titulo;
                 text-align: center;
                 align-self: center;
-                font-size: 1.4rem;
+                font-size: 1.6rem;
+                @extend .fondo;
             }
             .img_a{
                 grid-area: img;
@@ -91,7 +101,6 @@
                 margin: 5px;
                 background-color:darkgrey;
                 border-radius: 20px;
-                
                 width: 80px;
                 height: 80px;
                 }
@@ -106,23 +115,39 @@
             .reloj{
                 grid-area:reloj;
                 text-align: center;
+                margin-block: 15px;
+                @extend .fondo;
+                p{
+                    font-size: 1.2rem;
+                }
             }
             .caliz{
                 grid-area: caliz;
                 text-align: center;
+                margin-block: 15px;
+                @extend .fondo;
+                p{
+                    font-size: 1.2rem;
+                }
             }
             .corona{
                 grid-area: corona;
                 text-align: center;
+                margin-block: 15px;
+                @extend .fondo;
+                p{
+                    font-size: 1.2rem;
+                }
             }
             p.texto{
                 grid-area: texto;
                 text-align: center;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 strong{
-                    border: 1px solid black;
+                    border: 2px solid black;
                     padding: 2px;
                     border-radius: 10px;
+                    @extend .fondo;
                 }
             }
         }
@@ -139,6 +164,7 @@
             .talento{
                 grid-area: talento;
                 text-align: center;
+                @extend .fondo;
             }
             .t1{
                 grid-area: t1;
@@ -158,6 +184,7 @@
             .pasivas{
                 grid-area: pasiva;
                 text-align: center;
+                @extend .fondo;
             }
             .p1{
                 grid-area: p1;
@@ -175,6 +202,24 @@
                 @include ajuste-imagen(70px,70px);
             }
         }
+        .constelacion{
+            grid-area: constelacion;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 4fr;
+            grid-template-areas: "titulo" "img";
+            h2{
+                grid-area: titulo;
+                @extend .centrar;
+                @extend .fondo;
+            }
+            img{
+                grid-area: img;
+                padding: 10px;
+                @extend .centrar;
+                @include ajuste-imagen(200px,100%)
+            }
+        }
         .armas{
             grid-area: armas;
             display: grid;
@@ -185,6 +230,7 @@
                 grid-area: titulo; 
                 font-size: 1.5rem;
                 @extend .centrar;
+                @extend .fondo;
             }
             .img{
                 grid-area: armas;
@@ -211,6 +257,7 @@
                 text-align: center;
                 align-self: center;
                 font-size: 1.5rem;
+                @extend .fondo;
             }
             .img{
                 grid-area: img;
@@ -223,9 +270,9 @@
                 }
             }
         }
-        /*background-color: rgba(0, 0, 0, 0.600);*/
+        background-color: rgba(0, 0, 0, 0.600);
     }
-    /*background-image: url(../Img/home/fondo-pagina);
+    background-image: url(../Img/home/fondo-pagina);
     background-repeat: no-repeat;
-    background-size: cover;*/
+    background-size: cover;
 }
