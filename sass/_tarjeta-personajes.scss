@@ -10,11 +10,11 @@
     padding: 10px;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.452);
-    margin-inline: 10px;
+    margin-inline: 5px;
 }
-
 .tarjeta_personaje{
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 150px;
     grid-template-areas: 
@@ -68,8 +68,8 @@
         .personaje{
             grid-area: img;
             padding: 25px;
-            width: 90%;
-            height: 90%;
+            width: 85%;
+            height: 85%;
             @extend .fondo;
             @extend .centrar;
             background-color: rgba(0, 0, 0, 0.600);
@@ -113,41 +113,48 @@
             display: grid;
             grid-template-columns: repeat(2,1fr) 1.2fr;
             grid-template-rows: 3fr 1fr;
+            gap: 0px 5px;
             grid-template-areas: "reloj caliz corona""texto texto texto";
+            @include ajuste-imagen(100%,90%);
             .reloj{
                 grid-area:reloj;
                 text-align: center;
-                margin-block: 15px;
+                padding: 10px;
                 @extend .fondo;
+                @extend .centrar;
                 p{
-                    font-size: 1.2rem;
+                    font-size: 0.8rem;
                 }
             }
             .caliz{
                 grid-area: caliz;
                 text-align: center;
-                margin-block: 15px;
+                padding: 10px;
                 @extend .fondo;
+                @extend .centrar;
                 p{
-                    font-size: 1.2rem;
+                    font-size: 0.8rem;
                 }
             }
             .corona{
                 grid-area: corona;
                 text-align: center;
-                margin-block: 15px;
+                padding: 10px;
                 @extend .fondo;
+                @extend .centrar;
                 p{
-                    font-size: 1.2rem;
+                    font-size: 0.8rem;
                 }
             }
             p.texto{
                 grid-area: texto;
                 text-align: center;
-                font-size: 1.4rem;
+                font-size: 1.2rem;
+                @extend .centrar;
                 strong{
-                    border: 2px solid black;
+                    border: 1.5px solid black;
                     padding: 2px;
+                    width: 100%;
                     border-radius: 10px;
                     @extend .fondo;
                 }
@@ -156,6 +163,7 @@
         .talentos{
             grid-area: talentos;
             display: grid;
+            margin: 5px;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
             grid-template-areas:
@@ -171,17 +179,17 @@
             .t1{
                 grid-area: t1;
                 @extend .centrar;
-                @include ajuste-imagen(70px,70px);
+                @include ajuste-imagen(60px,60px);
             }
             .t2{
                 grid-area: t2;
                 @extend .centrar;
-                @include ajuste-imagen(70px,70px);
+                @include ajuste-imagen(60px,60px);
             }
             .t3{
                 grid-area: t3;
                 @extend .centrar;
-                @include ajuste-imagen(70px,70px);
+                @include ajuste-imagen(60px,60px);
             }
             .pasivas{
                 grid-area: pasiva;
@@ -191,17 +199,17 @@
             .p1{
                 grid-area: p1;
                 @extend .centrar;
-                @include ajuste-imagen(70px,70px);
+                @include ajuste-imagen(60px,60px);
             }
             .p2{
                 grid-area: p2;
                 @extend .centrar;
-                @include ajuste-imagen(70px,70px);
+                @include ajuste-imagen(60px,60px);
             }
             .p3{
                 grid-area: p3;
                 @extend .centrar;
-                @include ajuste-imagen(70px,70px);
+                @include ajuste-imagen(60px,60px);
             }
         }
         .constelacion{
@@ -277,4 +285,18 @@
     background-image: url(../Img/home/fondo-pagina);
     background-repeat: no-repeat;
     background-size: cover;
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-around;
+        padding: 10px;
+        height: 100%;
+        width:100%;
+        background-color:rgba(71, 61, 139, 0.753);
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
 }
