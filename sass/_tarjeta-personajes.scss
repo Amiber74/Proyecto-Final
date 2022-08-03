@@ -7,7 +7,7 @@
     height: $heigth;
 }
 .fondo{
-    padding: 10px;
+    padding: 5px;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.452);
     margin-inline: 5px;
@@ -85,6 +85,7 @@
         .p_artefactos{
             grid-area: artefactos;
             display: grid;
+            padding-top: 20px;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 2fr;
             grid-template-areas: "titulo" "img";
@@ -112,9 +113,11 @@
             grid-area: prioridades;
             display: grid;
             grid-template-columns: repeat(2,1fr) 1.2fr;
-            grid-template-rows: 3fr 1fr;
+            grid-template-rows: 4fr 1fr;
             gap: 0px 5px;
-            grid-template-areas: "reloj caliz corona""texto texto texto";
+            grid-template-areas:
+            "reloj caliz corona"
+            "texto texto texto";
             @include ajuste-imagen(100%,90%);
             .reloj{
                 grid-area:reloj;
@@ -152,10 +155,10 @@
                 font-size: 1.2rem;
                 @extend .centrar;
                 strong{
-                    border: 1.5px solid black;
-                    padding: 2px;
+                    border: 2px solid black;
+                    padding: 15px;
                     width: 100%;
-                    border-radius: 10px;
+                    border-radius: 15px;
                     @extend .fondo;
                 }
             }
@@ -163,7 +166,7 @@
         .talentos{
             grid-area: talentos;
             display: grid;
-            margin: 5px;
+            padding: 5px;
             grid-template-columns: repeat(3,1fr);
             grid-template-rows: 0.5fr 1fr 0.5fr 1fr;
             grid-template-areas:
@@ -227,7 +230,7 @@
                 grid-area: img;
                 padding: 10px;
                 @extend .centrar;
-                @include ajuste-imagen(200px,100%)
+                @include ajuste-imagen(200px,100%);
             }
         }
         .armas{
@@ -294,6 +297,9 @@
         height: 100%;
         width:100%;
         background-color:rgba(71, 61, 139, 0.753);
+        h2{
+            font-size: 1.8rem;
+        }
         a{
             text-decoration: none;
             color: black;

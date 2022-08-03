@@ -26,7 +26,7 @@
                             &:hover{
                                 background-color: #2655c5;
                                 border-radius: 15px;
-                                padding: 3px 6px;
+                                padding: 3px;
                             }
                         }
                     }
@@ -237,12 +237,94 @@
 }
 
     /*  Tarjetas de Personajes*/
-    @media (min-width: 1200px){
+    @media (min-width: 760px){
         .tarjeta_personaje{
+        header{
+            @include ajuste-imagen(100%,100px);
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "boton  nombre nombre nombre nombre";
+            a{
+                font-size: 2rem;
+            }
+            h1{
+                font-size: 3.5rem;
+                text-align: center;
+            }
+        }
+        main{
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(6,1fr);
+            grid-template-areas: 
+            "img img img img img"
+            "img img img img img"
+            "info info info info info"
+            "artefactos artefactos prioridades prioridades prioridades"
+            "talentos talentos constelacion constelacion constelacion"
+            "armas armas sinergia sinergia sinergia";
+            }
+            .p_artefactos{
+                .img_a{
+                    text-align: center;
+                }
+            }
+            .stats{
+                padding: 5px;
+                .reloj{
+                    @include ajuste-imagen(100%,50%);
+                    p{
+                        strong{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .caliz{
+                    @include ajuste-imagen(100%,50%);
+                    p{
+                        strong{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .corona{
+                    @include ajuste-imagen(100%,50%);
+                    p{
+                        strong{
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+            }
+            .talentos{
+                height: 90%;
+            }
+            .constelacion{
+                align-self: center;
+                justify-self: center;
+                img{
+                    @include ajuste-imagen(90%,90%);
+                }
+            }
+            .grupos{
+                padding:5px;
+                .img{
+                    img{
+                        @include ajuste-imagen(75px,75px);
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1020px){
+        .tarjeta_personaje{
+            width: 100vw;
             main{
                 grid-template-columns: repeat(8,1fr);
                 grid-template-rows: repeat(5,1fr);
-                @include ajuste-imagen(100vw,100vh);
+                @include ajuste-imagen(100%,100%);
                 grid-template-areas: 
                 "img img img  artefactos artefactos artefactos info info"
                 "img img img  prioridades prioridades prioridades constelacion constelacion"
@@ -256,40 +338,46 @@
                         justify-self: center;
                         align-self: center; 
                         margin: 2px;
-                        @include ajuste-imagen(90%,60%);
+                        @include ajuste-imagen(95%,60%);
                         img{
                             @include ajuste-imagen(90px,100px);
                         }
                         p{
-                            font-size:1.2rem;
+                            strong{
+                                font-size: 1.3rem;
+                            }
                         }
                     }
                     .caliz{
                         justify-self: center;
                         align-self: center; 
                         margin: 2px;
-                        @include ajuste-imagen(90%,60%);
+                        @include ajuste-imagen(95%,60%);
                         img{
                             @include ajuste-imagen(90px,100px);
                         }
                         p{
-                            font-size: 1.2rem;
+                            strong{
+                                font-size: 1.3rem;
+                            }
                         }
                     }
                     .corona{
                         justify-self: center;
                         align-self: center; 
                         margin: 2px;
-                        @include ajuste-imagen(85%,60%);
+                        @include ajuste-imagen(95%,60%);
                         img{
                             @include ajuste-imagen(90px,100px);
                         }
                         p{ 
-                            font-size: 1.2rem;
+                            strong{
+                                font-size: 1.3rem;
+                            }
                         }
                     }  
                     p.texto{
-                        font-size: 1.5rem;
+                        font-size: 1.6rem;
                     }
                 }
                 .p_artefactos{
@@ -300,12 +388,13 @@
                         width: 100%;
                         text-align: center;
                         img{
-                            @include ajuste-imagen(120px,120px);
+                            @include ajuste-imagen(100px,100px);
                         }
                     }
                 }
                 .info{
-                    padding: 15px;
+                    margin: 5px;
+                    padding: 10px;
                     font-size: 1.5rem;
                 }
                 .talentos{
@@ -344,7 +433,7 @@
                     }
                     .img{
                         img{
-                            @include ajuste-imagen (110,110)
+                            @include ajuste-imagen (130px,130px)
                         }
                     }
                 }
@@ -353,8 +442,10 @@
                     h2{
                         font-size: 2rem;
                     }
-                    img{
-                        @include ajuste-imagen(110px, 110px);
+                    .img{
+                        img{
+                            @include ajuste-imagen(100px,100px);
+                        }
                     }
                 }
                 .constelacion{
@@ -362,67 +453,11 @@
                         font-size: 2rem;
                     }
                     img{
-                        @include ajuste-imagen(70%, 70%);
+                        @include ajuste-imagen(100%, 100%);
                     }
                 }
             }
             background-image: url(../img/home/fondo_pagina_compu);
             background-size: cover;
-        }
-    }
-
-    @media (min-width: 760px){
-        .tarjeta_personaje{
-        header{
-            @include ajuste-imagen(100vw,100px);
-            grid-template-columns: repeat(6,1fr);
-            grid-template-rows: 1fr;
-            grid-template-areas: 
-            "boton boton nombre nombre nombre nombre";
-            a{
-                font-size: 2rem;
-            }
-            h1{
-                font-size: 3.5rem;
-                text-align: center;
-            }
-        }
-        main{
-            grid-template-columns: repeat(4,1fr);
-            grid-template-rows: repeat(6,1fr);
-            grid-template-areas: 
-            "img img img img"
-            "img img img img"
-            "info info info info"
-            "artefactos artefactos prioridades prioridades"
-            "talentos talentos constelacion constelacion"
-            "armas armas sinergia sinergia";
-            }
-            .stats{
-                .reloj{
-                    @include ajuste-imagen(90%,50%);
-                    p{
-                        strong{
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-                .caliz{
-                    @include ajuste-imagen(90%,50%);
-                    p{
-                        strong{
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-                .corona{
-                    @include ajuste-imagen(90%,50%);
-                    p{
-                        strong{
-                            font-size: 1.3rem;
-                        }
-                    }
-                }
-            }
         }
     }
