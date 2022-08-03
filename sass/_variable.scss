@@ -1,0 +1,17 @@
+    /* Colores */
+
+$anemo:#00695f;
+$cryo:#67cedb;
+$electro:#482880;
+$geo: #b28704;
+$hydro: #2c387e;
+$pyro: #aa2e25;
+
+$fondos_elementos:(
+    anemo:$anemo,
+    cryo:$cryo,
+    electro:$electro,
+    geo:$geo,
+    hydro:$hydro,
+    pyro:$pyro
+    );

@@ -240,7 +240,7 @@
     @media (min-width: 760px){
         .tarjeta_personaje{
         header{
-            @include ajuste-imagen(100%,100px);
+            @include ajuste-tamano(100%,100px);
             grid-template-columns: repeat(5,1fr);
             grid-template-rows: 1fr;
             grid-template-areas: 
@@ -272,7 +272,7 @@
             .stats{
                 padding: 5px;
                 .reloj{
-                    @include ajuste-imagen(100%,50%);
+                    @include ajuste-tamano(100%,50%);
                     p{
                         strong{
                             font-size: 1.3rem;
@@ -280,7 +280,7 @@
                     }
                 }
                 .caliz{
-                    @include ajuste-imagen(100%,50%);
+                    @include ajuste-tamano(100%,50%);
                     p{
                         strong{
                             font-size: 1.3rem;
@@ -288,7 +288,7 @@
                     }
                 }
                 .corona{
-                    @include ajuste-imagen(100%,50%);
+                    @include ajuste-tamano(100%,50%);
                     p{
                         strong{
                             font-size: 1.3rem;
@@ -303,14 +303,14 @@
                 align-self: center;
                 justify-self: center;
                 img{
-                    @include ajuste-imagen(90%,90%);
+                    @include ajuste-tamano(90%,90%);
                 }
             }
             .grupos{
                 padding:5px;
                 .img{
                     img{
-                        @include ajuste-imagen(75px,75px);
+                        @include ajuste-tamano(75px,75px);
 
                     }
                 }
@@ -321,10 +321,24 @@
     @media (min-width: 1020px){
         .tarjeta_personaje{
             width: 100vw;
+            header{
+                div{
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: 1fr;
+                    grid-template-areas: "boton nombre nombre nombre";
+                    h1{
+                        font-size: 3rem;
+                        padding-right: 20%;
+                    }
+                    a{
+                        font-size: 2rem;
+                    }
+                }
+            }
             main{
                 grid-template-columns: repeat(8,1fr);
                 grid-template-rows: repeat(5,1fr);
-                @include ajuste-imagen(100%,100%);
+                @include ajuste-tamano(100%,100%);
                 grid-template-areas: 
                 "img img img  artefactos artefactos artefactos info info"
                 "img img img  prioridades prioridades prioridades constelacion constelacion"
@@ -333,14 +347,14 @@
                 "talentos talentos armas armas armas sinergia sinergia sinergia";
 
                 .stats{
-                    @include ajuste-imagen(100%,100%);
+                    @include ajuste-tamano(100%,100%);
                     .reloj{
                         justify-self: center;
                         align-self: center; 
                         margin: 2px;
-                        @include ajuste-imagen(95%,60%);
+                        @include ajuste-tamano(95%,60%);
                         img{
-                            @include ajuste-imagen(90px,100px);
+                            @include ajuste-tamano(90px,100px);
                         }
                         p{
                             strong{
@@ -352,9 +366,9 @@
                         justify-self: center;
                         align-self: center; 
                         margin: 2px;
-                        @include ajuste-imagen(95%,60%);
+                        @include ajuste-tamano(95%,60%);
                         img{
-                            @include ajuste-imagen(90px,100px);
+                            @include ajuste-tamano(90px,100px);
                         }
                         p{
                             strong{
@@ -366,9 +380,9 @@
                         justify-self: center;
                         align-self: center; 
                         margin: 2px;
-                        @include ajuste-imagen(95%,60%);
+                        @include ajuste-tamano(95%,60%);
                         img{
-                            @include ajuste-imagen(90px,100px);
+                            @include ajuste-tamano(90px,100px);
                         }
                         p{ 
                             strong{
@@ -388,7 +402,7 @@
                         width: 100%;
                         text-align: center;
                         img{
-                            @include ajuste-imagen(100px,100px);
+                            @include ajuste-tamano(100px,100px);
                         }
                     }
                 }
@@ -398,32 +412,32 @@
                     font-size: 1.5rem;
                 }
                 .talentos{
-                    @include ajuste-imagen(100%,100%);
+                    @include ajuste-tamano(100%,100%);
                     .talento{
                         font-size: 1.9rem;
                         margin: 10px;
                     }
                     .t1{
-                        @include ajuste-imagen(85px,85px);
+                        @include ajuste-tamano(85px,85px);
                     }
                     .t2{
-                        @include ajuste-imagen(85px,85px);
+                        @include ajuste-tamano(85px,85px);
                     }
                     .t3{
-                        @include ajuste-imagen(85px,85px);
+                        @include ajuste-tamano(85px,85px);
                     }
                     .pasivas{
                         font-size: 1.9rem;
                         margin: 10px;
                     }
                     .p1{
-                        @include ajuste-imagen(85px,85px);
+                        @include ajuste-tamano(85px,85px);
                     }
                     .p2{
-                        @include ajuste-imagen(85px,85px);
+                        @include ajuste-tamano(85px,85px);
                     }
                     .p3{
-                        @include ajuste-imagen(85px,85px);
+                        @include ajuste-tamano(85px,85px);
                     }
                 }
                 .armas{
@@ -433,18 +447,18 @@
                     }
                     .img{
                         img{
-                            @include ajuste-imagen (130px,130px)
+                            @include ajuste-tamano (130px,130px)
                         }
                     }
                 }
                 .grupos{
-                    @include ajuste-imagen(100%,100%);
+                    @include ajuste-tamano(100%,100%);
                     h2{
                         font-size: 2rem;
                     }
                     .img{
                         img{
-                            @include ajuste-imagen(100px,100px);
+                            @include ajuste-tamano(100px,100px);
                         }
                     }
                 }
@@ -453,7 +467,7 @@
                         font-size: 2rem;
                     }
                     img{
-                        @include ajuste-imagen(100%, 100%);
+                        @include ajuste-tamano(100%, 100%);
                     }
                 }
             }

@@ -1,8 +1,31 @@
+.tarjeta_personaje{
+    header{
+        .anemo{
+            background-color:map-get($fondos_elementos,anemo);
+        }
+        .cryo{
+            background-color:map-get($fondos_elementos,cryo);
+        }
+        .electro{
+            background-color:map-get($fondos_elementos,electro);
+        }
+        .geo{
+            
+            background-color:map-get($fondos_elementos,geo);
+        }
+        .hydro{
+            background-color:map-get($fondos_elementos,hydro);
+        }
+        .pyro{
+            background-color:map-get($fondos_elementos,pyro);
+        }
+    }
+}
 .centrar{
     justify-self: center;
     align-self: center;
 }
-@mixin ajuste-imagen ($width, $heigth) {
+@mixin ajuste-tamano ($width, $heigth) {
     width: $width;
     height: $heigth;
 }
@@ -24,35 +47,36 @@
     
     header{
         grid-area: header;
-        display: grid;
-        width: 100%;
-        grid-template-columns: 100px 1fr;
-        grid-template-rows: 1fr;
-        justify-content: center;
-        align-items: center;
-        grid-template-areas: "boton nombre";
-        a{
-            grid-area: boton;
-            font-size: 1rem;
-            border: 3px solid black;
-            border-radius: 8px;
-            justify-self: center;
-            padding: 5px;
-            text-decoration: none;
-            color: black;
+        div{
+            display: grid;
+            @include ajuste-tamano(100vw,100%);
+            grid-template-columns: 100px 1fr;
+            grid-template-rows: 1fr;
+            justify-content: center;
+            align-items: center;
+            grid-template-areas: "boton nombre";
+            a{
+                grid-area: boton;
+                font-size: 1rem;
+                border: 3px solid black;
+                border-radius: 8px;
+                justify-self: center;
+                padding: 5px;
+                text-decoration: none;
+                color: black;
+            }
+            h1{
+                grid-area: nombre;
+                font-size: 2rem;
+                text-decoration: none;
+                @extend .centrar;
+            }
         }
-        h1{
-            grid-area: nombre;
-            font-size: 2rem;
-            text-decoration: none;
-            @extend .centrar;
-        }
-        background-color:rgba(71, 61, 139);
     }
 
     main{
         display: grid;
-        width: 100%;
+        width: 90%;
         gap: 10px 0px;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr repeat(2,1.5fr) 1fr 1.5fr 1.5fr 2fr 3fr;
@@ -118,7 +142,7 @@
             grid-template-areas:
             "reloj caliz corona"
             "texto texto texto";
-            @include ajuste-imagen(100%,90%);
+            @include ajuste-tamano(100%,90%);
             .reloj{
                 grid-area:reloj;
                 text-align: center;
@@ -182,17 +206,17 @@
             .t1{
                 grid-area: t1;
                 @extend .centrar;
-                @include ajuste-imagen(60px,60px);
+                @include ajuste-tamano(60px,60px);
             }
             .t2{
                 grid-area: t2;
                 @extend .centrar;
-                @include ajuste-imagen(60px,60px);
+                @include ajuste-tamano(60px,60px);
             }
             .t3{
                 grid-area: t3;
                 @extend .centrar;
-                @include ajuste-imagen(60px,60px);
+                @include ajuste-tamano(60px,60px);
             }
             .pasivas{
                 grid-area: pasiva;
@@ -202,17 +226,17 @@
             .p1{
                 grid-area: p1;
                 @extend .centrar;
-                @include ajuste-imagen(60px,60px);
+                @include ajuste-tamano(60px,60px);
             }
             .p2{
                 grid-area: p2;
                 @extend .centrar;
-                @include ajuste-imagen(60px,60px);
+                @include ajuste-tamano(60px,60px);
             }
             .p3{
                 grid-area: p3;
                 @extend .centrar;
-                @include ajuste-imagen(60px,60px);
+                @include ajuste-tamano(60px,60px);
             }
         }
         .constelacion{
@@ -230,7 +254,7 @@
                 grid-area: img;
                 padding: 10px;
                 @extend .centrar;
-                @include ajuste-imagen(200px,100%);
+                @include ajuste-tamano(200px,100%);
             }
         }
         .armas{
@@ -255,7 +279,7 @@
                     margin: 5px;
                     background-color:darkgrey;
                     border-radius: 20px;
-                    @include ajuste-imagen(110px,110px)
+                    @include ajuste-tamano(110px,110px)
                 }
             }
         }
