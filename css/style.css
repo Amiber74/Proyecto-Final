@@ -1366,6 +1366,23 @@ main .trailer iframe {
   color: black;
 }
 
+.registro {
+  display: grid;
+  padding-block: 20px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: "titulo titulo titulo" ". form .";
+}
+.registro h2 {
+  grid-area: titulo;
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+.registro .form {
+  grid-area: form;
+}
+
 /*  Media queries del Layout    */
 @media (min-width: 600px) {
   .pagina header {

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="./img/home/logo.png">
+    <title>Genshin Wiki - Registrarse</title>
+</head>
+
+<body class="pagina">
+<header>
+            
+    <!-- Barra de navegacion -->
+    <h1>Genshin Wiki</h1>
+            
+    <nav class="navegador">
+        <ul>
+            <li><a href="./pages/artefactos.html">Artefactos</a></li>
+            <li><a href="./pages/armas.html">Armas</a></li>
+            <li><a href="./pages/noticias.html">Noticias</a></li>
+            <li><a href="./pages/personajes.html">Personajes</a></li>
+            <li><a href="./pages/registrarse.html">Registrarse</a></li>
+
+        </ul>
+    </nav>
+</header>
+
+<main class="registro">
+<h2>Registrese y reciba todas las novedades sobre la pagina</h2>
+<form action="get" class="form" autocomplete="on">
+
+    <label for="campo_nombre"> Ingrese su nombre de usuario</label>
+    <input type="text" name="campo_nombre" id="campo_nombre" placeholder="Nombre..." required>
+    <div>
+        <label for="campo_email"> Ingrese su email</label>
+        <input type="email" name="campo_email" id="campo_email" placeholder="wikigenshin@email.com" required>
+    </div>
+    <label for="campo_contraseña">Ingrese una contraseña</label>
+    <input type="password" name="campo_contraseña" id="campo_contraseña" required>
+    <div>
+        <label for="campo_opcion"> Desea recibir noticias actualizadas?</label>
+        <input type="checkbox" name="campo_opcion" id="campo_opcion">
+    </div>
+    <input type="range" name="numrango" id="numrango" value="25" min="10" max="100" step="1">
+</form>
+
+</main>
+
+<footer>
+    <!-- Info de la pagina -->
+    <section class="informacion">
+        <h2>Información</h2>
+        <ul>
+            <li>
+                <p>Soporte</p>
+            </li>
+            <li>
+                <p>Terminos de uso</p>
+            </li>
+            <li>
+                <p>Politicas de privacidad</p>
+            </li>
+            <li>
+                <p>Publicidad</p>
+            </li>
+        </ul>
+    </section>
+    <!-- Redes Sociales -->
+    <section class="redes">
+        <h2>Siguenos</h2>
+        <ul>
+            <li><a href="https://www.facebook.com/genshinimpact.es" target="_blank">facebook</a></li>
+            <li><a href="https://www.instagram.com/genshinimpact/" target="_blank">instagram</a></li>
+            <li><a href="https://twitter.com/genshinimpactes" target="_blank">twitter </a></li>
+            <li><a href="https://www.twitch.tv/genshinimpactofficial" target="_blank">twitch </a></li>
+        </ul>
+    </section>
+</footer>
+
+</body>
+</html>
