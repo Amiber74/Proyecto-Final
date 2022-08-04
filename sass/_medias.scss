@@ -35,7 +35,14 @@
             footer{
                 height: 100%;
                 h2{
-                    font-size: 1.5rem;
+                    font-size: 2rem;
+                }
+                section{
+                    ul{
+                        li{
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
             }
 
@@ -320,9 +327,10 @@
 
     @media (min-width: 1020px){
         .tarjeta_personaje{
-            width: 100vw;
             header{
+                width: 100vw;
                 div{
+                    width: 100%;
                     grid-template-columns: repeat(4,1fr);
                     grid-template-rows: 1fr;
                     grid-template-areas: "boton nombre nombre nombre";
@@ -338,7 +346,7 @@
             main{
                 grid-template-columns: repeat(8,1fr);
                 grid-template-rows: repeat(5,1fr);
-                @include ajuste-tamano(100%,100%);
+                width: 100vw;
                 grid-template-areas: 
                 "img img img  artefactos artefactos artefactos info info"
                 "img img img  prioridades prioridades prioridades constelacion constelacion"
@@ -347,7 +355,7 @@
                 "talentos talentos armas armas armas sinergia sinergia sinergia";
 
                 .stats{
-                    @include ajuste-tamano(100%,100%);
+                    @include ajuste-tamano(90%,90%);
                     .reloj{
                         justify-self: center;
                         align-self: center; 
@@ -395,6 +403,7 @@
                     }
                 }
                 .p_artefactos{
+                    padding: 15px;
                     p{
                         font-size: 2rem;
                     }
@@ -407,12 +416,12 @@
                     }
                 }
                 .info{
-                    margin: 5px;
-                    padding: 10px;
+                    @include ajuste-tamano(90%,90%);
+                    padding: 30px;
                     font-size: 1.5rem;
                 }
                 .talentos{
-                    @include ajuste-tamano(100%,100%);
+                    @include ajuste-tamano(90%,90%);
                     .talento{
                         font-size: 1.9rem;
                         margin: 10px;
@@ -452,7 +461,7 @@
                     }
                 }
                 .grupos{
-                    @include ajuste-tamano(100%,100%);
+                    @include ajuste-tamano(90%,90%);
                     h2{
                         font-size: 2rem;
                     }
@@ -467,11 +476,65 @@
                         font-size: 2rem;
                     }
                     img{
-                        @include ajuste-tamano(100%, 100%);
+                        @include ajuste-tamano(90%, 90%);
                     }
                 }
             }
             background-image: url(../img/home/fondo_pagina_compu);
             background-size: cover;
         }
+        footer{
+            width: 100vw;
+        }
     }
+        /*  Registro*/
+        @media (min-width: 760px){
+            .registro{
+                grid-template-columns: 2fr 1fr 3fr 1fr 2fr;
+                grid-template-rows: 1fr repeat(2,2fr);
+                grid-template-areas: 
+                "titulo titulo titulo titulo titulo"
+                "c2 . form . c1"
+                "c4 . form . c3";
+                label{
+                    font-size: 1.2rem;
+                    text-align: center;
+                    input{
+                        margin-left: 7%;
+                    }
+                    #campo_opinion{
+                        margin-left: 5%;
+                    }
+                }
+                h2{
+                    font-size: 2rem;
+                }
+                .boton{
+                    align-self: center;
+                    justify-self: center;
+                }
+            }
+        }
+        @media (min-width: 1020px){
+            .registro{
+                h2{
+                    font-size: 2.5rem;
+                    padding: 20px;
+                }
+                label{
+                    font-size: 1.5rem;
+                    input{
+                        margin-left: 25%;
+                    }
+                    #campo_opinion{
+                        margin-left: 25%;
+                    }
+                }
+                #campo_opcion{
+                    margin-left: 0%;
+                }
+                .boton{
+                    font-size: 1.1rem;
+                }
+            }
+        }

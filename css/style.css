@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Colores */
 * {
   margin: 0px;
@@ -59,6 +60,10 @@
 .pagina footer a {
   text-decoration: none;
   color: black;
+}
+.pagina footer section {
+  justify-self: center;
+  align-self: center;
 }
 
 header h1 {
@@ -1105,12 +1110,12 @@ main .trailer iframe {
   padding: 5px;
   border-radius: 20px;
   background-color: rgba(128, 128, 128, 0.452);
-  margin-inline: 5px;
+  padding-inline: 5px;
 }
 
 .tarjeta_personaje {
   display: grid;
-  width: 100%;
+  width: 100vw;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr 150px;
   grid-template-areas: "header" "main" "footer";
@@ -1123,7 +1128,7 @@ main .trailer iframe {
 }
 .tarjeta_personaje header div {
   display: grid;
-  width: 100vw;
+  width: 100%;
   height: 100%;
   grid-template-columns: 100px 1fr;
   grid-template-rows: 1fr;
@@ -1148,30 +1153,32 @@ main .trailer iframe {
 }
 .tarjeta_personaje main {
   display: grid;
-  width: 90%;
+  width: 100%;
   gap: 10px 0px;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   grid-template-rows: 3fr repeat(2, 1.5fr) 1fr 1.5fr 1.5fr 2fr 3fr;
   grid-template-areas: "img" "info" "artefactos" "prioridades" "talentos" "constelacion" "armas" "sinergia";
   background-color: rgba(0, 0, 0, 0.6);
 }
 .tarjeta_personaje main .personaje {
   grid-area: img;
-  padding: 25px;
+  padding: 20px;
   width: 85%;
   height: 85%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 .tarjeta_personaje main .info {
+  width: 99%;
   grid-area: info;
   text-align: center;
   align-self: center;
-  padding: 50px;
+  padding: 30px;
   font-size: 1.3rem;
 }
 .tarjeta_personaje main .p_artefactos {
   grid-area: artefactos;
   display: grid;
+  width: 100%;
   padding-top: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 2fr;
@@ -1197,6 +1204,7 @@ main .trailer iframe {
 .tarjeta_personaje main .stats {
   grid-area: prioridades;
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr) 1.2fr;
   grid-template-rows: 4fr 1fr;
   gap: 0px 5px;
@@ -1235,11 +1243,12 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .stats p.texto strong {
   border: 2px solid black;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
   border-radius: 15px;
 }
 .tarjeta_personaje main .talentos {
+  width: 100%;
   grid-area: talentos;
   display: grid;
   padding: 5px;
@@ -1288,6 +1297,7 @@ main .trailer iframe {
 .tarjeta_personaje main .constelacion {
   grid-area: constelacion;
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 4fr;
   grid-template-areas: "titulo" "img";
@@ -1303,6 +1313,7 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .armas {
   grid-area: armas;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr;
@@ -1326,8 +1337,10 @@ main .trailer iframe {
   height: 110px;
 }
 .tarjeta_personaje main .grupos {
+  width: 100%;
   grid-area: sinergia;
   display: grid;
+  padding: 20px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 3fr;
   grid-template-areas: "titulo" "img";
@@ -1366,21 +1379,88 @@ main .trailer iframe {
   color: black;
 }
 
+.ajuste_form, .registro .form #campo_opinion, .registro .form #campo_contraseña, .registro .form #campo_email, .registro .form #campo_nombre {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "label" "input";
+}
+.ajuste_form label, .registro .form #campo_opinion label, .registro .form #campo_contraseña label, .registro .form #campo_email label, .registro .form #campo_nombre label {
+  grid-area: label;
+}
+.ajuste_form input, .registro .form #campo_opinion input, .registro .form #campo_contraseña input, .registro .form #campo_email input, .registro .form #campo_nombre input {
+  grid-area: input;
+}
+
 .registro {
   display: grid;
-  padding-block: 20px;
-  grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr 5fr;
-  grid-template-areas: "titulo titulo titulo" ". form .";
+  padding: 20px;
+  grid-template-columns: 3fr 0.5fr 3fr;
+  grid-template-rows: 1fr repeat(4, 2fr);
+  grid-template-areas: "titulo titulo titulo" "form . c1" "form . c2" "form . c3" "form . c4";
+}
+.registro .c1 {
+  grid-area: c1;
+  width: 100%;
+  height: 100%;
+}
+.registro .c2 {
+  grid-area: c2;
+  width: 100%;
+  height: 100%;
+}
+.registro .c3 {
+  grid-area: c3;
+  width: 100%;
+  height: 100%;
+}
+.registro .c4 {
+  grid-area: c4;
+  width: 100%;
+  height: 100%;
 }
 .registro h2 {
+  font-size: 1.3rem;
   grid-area: titulo;
+  text-shadow: 0 0 15px black;
   color: white;
-  align-self: center;
+  padding: 15px;
   text-align: center;
+  align-self: center;
+  background-color: rgba(122, 48, 172, 0.7176470588);
+  border-radius: 10px;
 }
 .registro .form {
+  padding: 20px;
   grid-area: form;
+  display: grid;
+  gap: 15px 0px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr) 160px 1fr;
+  grid-template-areas: "nombre" "email" "contraseña" "pregunta" "opinion" "enviar";
+  border-radius: 20px;
+  background-color: rgba(83, 60, 165, 0.678);
+}
+.registro .form #campo_nombre {
+  grid-area: nombre;
+}
+.registro .form #campo_email {
+  grid-area: email;
+}
+.registro .form #campo_contraseña {
+  grid-area: contraseña;
+}
+.registro .form #campo_opinion {
+  grid-area: opinion;
+}
+.registro .form .boton {
+  grid-area: enviar;
+  width: 150px;
+  height: 20px;
+}
+.registro .form label {
+  color: white;
+  text-shadow: 0 0 15px black;
 }
 
 /*  Media queries del Layout    */
@@ -1416,7 +1496,10 @@ main .trailer iframe {
     height: 100%;
   }
   .pagina footer h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+  }
+  .pagina footer section ul li {
+    font-size: 1.2rem;
   }
   /*  INDEX   */
 }
@@ -1828,11 +1911,14 @@ main .trailer iframe {
 }
 @media (min-width: 1020px) {
   .tarjeta_personaje {
-    width: 100vw;
     background-image: url(../img/home/fondo_pagina_compu);
     background-size: cover;
   }
+  .tarjeta_personaje header {
+    width: 100vw;
+  }
   .tarjeta_personaje header div {
+    width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-template-areas: "boton nombre nombre nombre";
@@ -1847,13 +1933,12 @@ main .trailer iframe {
   .tarjeta_personaje main {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     grid-template-areas: "img img img  artefactos artefactos artefactos info info" "img img img  prioridades prioridades prioridades constelacion constelacion" "img img img  prioridades prioridades prioridades constelacion constelacion" "talentos talentos armas armas armas sinergia sinergia sinergia" "talentos talentos armas armas armas sinergia sinergia sinergia";
   }
   .tarjeta_personaje main .stats {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   .tarjeta_personaje main .stats .reloj {
     justify-self: center;
@@ -1900,6 +1985,9 @@ main .trailer iframe {
   .tarjeta_personaje main .stats p.texto {
     font-size: 1.6rem;
   }
+  .tarjeta_personaje main .p_artefactos {
+    padding: 15px;
+  }
   .tarjeta_personaje main .p_artefactos p {
     font-size: 2rem;
   }
@@ -1912,13 +2000,14 @@ main .trailer iframe {
     height: 100px;
   }
   .tarjeta_personaje main .info {
-    margin: 5px;
-    padding: 10px;
+    width: 90%;
+    height: 90%;
+    padding: 30px;
     font-size: 1.5rem;
   }
   .tarjeta_personaje main .talentos {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   .tarjeta_personaje main .talentos .talento {
     font-size: 1.9rem;
@@ -1961,8 +2050,8 @@ main .trailer iframe {
     height: 130px;
   }
   .tarjeta_personaje main .grupos {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
   }
   .tarjeta_personaje main .grupos h2 {
     font-size: 2rem;
@@ -1975,8 +2064,57 @@ main .trailer iframe {
     font-size: 2rem;
   }
   .tarjeta_personaje main .constelacion img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+  }
+  footer {
+    width: 100vw;
+  }
+}
+/*  Registro*/
+@media (min-width: 760px) {
+  .registro {
+    grid-template-columns: 2fr 1fr 3fr 1fr 2fr;
+    grid-template-rows: 1fr repeat(2, 2fr);
+    grid-template-areas: "titulo titulo titulo titulo titulo" "c2 . form . c1" "c4 . form . c3";
+  }
+  .registro label {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .registro label input {
+    margin-left: 7%;
+  }
+  .registro label #campo_opinion {
+    margin-left: 5%;
+  }
+  .registro h2 {
+    font-size: 2rem;
+  }
+  .registro .boton {
+    align-self: center;
+    justify-self: center;
+  }
+}
+@media (min-width: 1020px) {
+  .registro h2 {
+    font-size: 2.5rem;
+    padding: 20px;
+  }
+  .registro label {
+    font-size: 1.5rem;
+  }
+  .registro label input {
+    margin-left: 25%;
+  }
+  .registro label #campo_opinion {
+    margin-left: 25%;
+  }
+  .registro #campo_opcion {
+    margin-left: 0%;
+  }
+  .registro .boton {
+    font-size: 1.1rem;
   }
 }
 

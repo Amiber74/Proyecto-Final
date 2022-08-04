@@ -50,7 +50,7 @@
         grid-area: main;            
         background-image: url(../img/home/fondo-pagina);
         background-size: cover;
-        width:100%;
+        width: 100%;
     }
     footer{
         grid-area: footer;
@@ -63,6 +63,10 @@
         a{
             text-decoration: none;
             color: black;
+        }
+        section{
+            justify-self: center;
+            align-self: center;
         }
     }
 }

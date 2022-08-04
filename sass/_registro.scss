@@ -1,18 +1,86 @@
+.ajuste_form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "label""input";
+    label{
+        grid-area: label;
+    }
+    input{
+        grid-area: input;
+    }
+}
 
 .registro{
     display: grid;
-    padding-block: 20px;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 5fr;
-    grid-template-areas: "titulo titulo titulo" ". form .";
+    padding: 20px;
+    grid-template-columns: 3fr 0.5fr 3fr;
+    grid-template-rows: 1fr repeat(4,2fr);
+    grid-template-areas: "titulo titulo titulo" 
+    "form . c1" 
+    "form . c2" 
+    "form . c3" 
+    "form . c4";
+    @for $i from 1 to 5 {
+        .c#{$i}{
+            grid-area:c#{$i};
+            width:100% ;
+            height: 100%;
+        }
+    }
     h2{
+        font-size: 1.3rem;
         grid-area: titulo;
+        text-shadow: 0 0 15px black;
         color: white;
-        align-self: center;
+        padding: 15px;
         text-align: center;
+        align-self: center;
+        background-color: #7a30acb7;
+        border-radius: 10px;
     }
     .form{
+        padding: 20px;
         grid-area: form;
+        display: grid;
+        gap: 15px 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr) 160px 1fr;
+        grid-template-areas: 
+        "nombre"
+        "email"
+        "contraseña"
+        "pregunta"
+        "opinion"
+        "enviar";
+        #campo_nombre{
+            grid-area: nombre;
+            @extend .ajuste_form;
+        }
+        #campo_email{
+            grid-area:email;
+            @extend .ajuste_form;
+        }
+        #campo_contraseña{
+            grid-area:contraseña;
+            @extend .ajuste_form;
+        }
+        #campo_opinion{
+            grid-area: opinion;
+            @extend .ajuste_form;
+        }
+        .boton{
+            grid-area: enviar;
+            width: 150px;
+            height: 20px;
+        }
+
+        label{
+            color: white;
+            text-shadow: 0 0 15px black;
+        }
+        border-radius: 20px;
+        background-color: rgba(83, 60, 165, 0.678);
     }
 
 }

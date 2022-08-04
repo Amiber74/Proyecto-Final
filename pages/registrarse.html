@@ -13,15 +13,16 @@
 <header>
             
     <!-- Barra de navegacion -->
-    <h1>Genshin Wiki</h1>
+    <a href="../index.html">
+        <h1>Genshin Wiki</h1>
+    </a>
             
     <nav class="navegador">
         <ul>
-            <li><a href="./pages/artefactos.html">Artefactos</a></li>
-            <li><a href="./pages/armas.html">Armas</a></li>
-            <li><a href="./pages/noticias.html">Noticias</a></li>
-            <li><a href="./pages/personajes.html">Personajes</a></li>
-            <li><a href="./pages/registrarse.html">Registrarse</a></li>
+            <li><a href="../pages/artefactos.html">Artefactos</a></li>
+            <li><a href="../pages/armas.html">Armas</a></li>
+            <li><a href="../pages/noticias.html">Noticias</a></li>
+            <li><a href="../pages/personajes.html">Personajes</a></li>
 
         </ul>
     </nav>
@@ -31,20 +32,28 @@
 <h2>Registrese y reciba todas las novedades sobre la pagina</h2>
 <form action="get" class="form" autocomplete="on">
 
-    <label for="campo_nombre"> Ingrese su nombre de usuario</label>
-    <input type="text" name="campo_nombre" id="campo_nombre" placeholder="Nombre..." required>
-    <div>
-        <label for="campo_email"> Ingrese su email</label>
-        <input type="email" name="campo_email" id="campo_email" placeholder="wikigenshin@email.com" required>
-    </div>
-    <label for="campo_contraseña">Ingrese una contraseña</label>
-    <input type="password" name="campo_contraseña" id="campo_contraseña" required>
-    <div>
-        <label for="campo_opcion"> Desea recibir noticias actualizadas?</label>
-        <input type="checkbox" name="campo_opcion" id="campo_opcion">
-    </div>
-    <input type="range" name="numrango" id="numrango" value="25" min="10" max="100" step="1">
-</form>
+    <label for="campo_nombre"> Ingrese su nombre de usuario: 
+        <input type="text" name="campo_nombre" id="campo_nombre" placeholder="Nombre..." required>
+    </label>
+        <label for="campo_email"> Ingrese su email: 
+            <input type="email" name="campo_email" id="campo_email" placeholder="wikigenshin@email.com" required>
+        </label>
+        <label for="campo_contraseña">Ingrese una contraseña: 
+            <input type="password" name="campo_contraseña" id="campo_contraseña" required>
+        </label>
+        <label for="campo_opcion"> Desea recibir noticias actualizadas?
+            <input type="checkbox" name="campo_opcion" id="campo_opcion">
+        </label>
+        <label for="campo_opinion"> Escriba si tiene alguna sugerencia, consulta y/o propuesta.
+            <textarea name="campo_opinion" id="campo_opinion" cols="25" rows="7" ></textarea>
+        </label>
+
+        <input type="submit" value="enviar formulario" class="boton">
+    </form>
+    <img src="../Img/chibis/chibi_1.png" alt="chibi del personaje Kaedehara Kasuha" class="c1">
+    <img src="../Img/chibis/chibi_2.png" alt="chibi del personaje Shogun Raiden" class="c2">
+    <img src="../Img/chibis/chibi_3.png" alt="chibi del personaje Diluc" class="c3">
+    <img src="../Img/chibis/chibi_4.png" alt="chibi del personaje Eula" class="c4">
 
 </main>
 
