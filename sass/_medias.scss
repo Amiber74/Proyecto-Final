@@ -256,7 +256,7 @@
                 font-size: 2rem;
             }
             h1{
-                font-size: 3.5rem;
+                font-size: 3rem;
                 text-align: center;
             }
         }
@@ -272,14 +272,20 @@
             "armas armas sinergia sinergia sinergia";
             }
             .p_artefactos{
+                p{
+                    width: 90%;
+                }
                 .img_a{
-                    text-align: center;
+                    img{
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
             .stats{
                 padding: 5px;
                 .reloj{
-                    @include ajuste-tamano(100%,50%);
+                    @include ajuste-tamano(100%,70%);
                     p{
                         strong{
                             font-size: 1.3rem;
@@ -287,7 +293,7 @@
                     }
                 }
                 .caliz{
-                    @include ajuste-tamano(100%,50%);
+                    @include ajuste-tamano(100%,70%);
                     p{
                         strong{
                             font-size: 1.3rem;
@@ -295,7 +301,7 @@
                     }
                 }
                 .corona{
-                    @include ajuste-tamano(100%,50%);
+                    @include ajuste-tamano(100%,70%);
                     p{
                         strong{
                             font-size: 1.3rem;
@@ -316,9 +322,9 @@
             .grupos{
                 padding:5px;
                 .img{
+                    text-align: center;
                     img{
                         @include ajuste-tamano(75px,75px);
-
                     }
                 }
             }
@@ -328,12 +334,10 @@
     @media (min-width: 1020px){
         .tarjeta_personaje{
             header{
-                width: 100vw;
                 div{
-                    width: 100%;
-                    grid-template-columns: repeat(4,1fr);
+                    grid-template-columns: repeat(5,1fr);
                     grid-template-rows: 1fr;
-                    grid-template-areas: "boton nombre nombre nombre";
+                    grid-template-areas: "boton nombre nombre nombre nombre";
                     h1{
                         font-size: 3rem;
                         padding-right: 20%;
@@ -344,147 +348,113 @@
                 }
             }
             main{
+                padding: 10px;
                 grid-template-columns: repeat(8,1fr);
                 grid-template-rows: repeat(5,1fr);
-                width: 100vw;
                 grid-template-areas: 
-                "img img img  artefactos artefactos artefactos info info"
-                "img img img  prioridades prioridades prioridades constelacion constelacion"
-                "img img img  prioridades prioridades prioridades constelacion constelacion"
+                "img img img artefactos artefactos artefactos info info"
+                "img img img prioridades prioridades prioridades constelacion constelacion"
+                "img img img prioridades prioridades prioridades constelacion constelacion"
                 "talentos talentos armas armas armas sinergia sinergia sinergia"
                 "talentos talentos armas armas armas sinergia sinergia sinergia";
-
-                .stats{
-                    @include ajuste-tamano(90%,90%);
-                    .reloj{
-                        justify-self: center;
-                        align-self: center; 
-                        margin: 2px;
-                        @include ajuste-tamano(95%,60%);
+                h2{
+                    font-size: 2rem;
+                }
+                .info{
+                    justify-self: center;
+                    align-self: center;
+                    strong{
+                        text-align: center;
+                        font-size: 1.3rem;
+                    }
+                }
+                .p_artefactos{
+                    p{
+                        width: 90%;
+                    }
+                    .img_a{
+                        text-align: center;
                         img{
-                            @include ajuste-tamano(90px,100px);
+                            width: 100px;
+                            height: 100px;
+                        }
+                    }
+                }
+                .stats{
+                    .reloj{
+                        img{
+                            @include ajuste-tamano(80px,80px);
                         }
                         p{
                             strong{
-                                font-size: 1.3rem;
+                                font-size: 1.2rem;
                             }
                         }
                     }
                     .caliz{
-                        justify-self: center;
-                        align-self: center; 
-                        margin: 2px;
-                        @include ajuste-tamano(95%,60%);
                         img{
-                            @include ajuste-tamano(90px,100px);
+                            @include ajuste-tamano(80px,80px);
                         }
                         p{
                             strong{
-                                font-size: 1.3rem;
+                                font-size: 1.2rem;
                             }
                         }
                     }
                     .corona{
-                        justify-self: center;
-                        align-self: center; 
-                        margin: 2px;
-                        @include ajuste-tamano(95%,60%);
                         img{
-                            @include ajuste-tamano(90px,100px);
+                            @include ajuste-tamano(80px,80px);
                         }
-                        p{ 
+                        p{
                             strong{
-                                font-size: 1.3rem;
+                                font-size: 1.2rem;
                             }
                         }
-                    }  
+                    }
                     p.texto{
-                        font-size: 1.6rem;
-                    }
-                }
-                .p_artefactos{
-                    padding: 15px;
-                    p{
-                        font-size: 2rem;
-                    }
-                    .img_a{
-                        width: 100%;
-                        text-align: center;
-                        img{
-                            @include ajuste-tamano(100px,100px);
+                        strong{
+                            font-size: 1.2rem;
                         }
                     }
                 }
-                .info{
-                    @include ajuste-tamano(90%,90%);
-                    padding: 30px;
-                    font-size: 1.5rem;
-                }
+                
                 .talentos{
-                    @include ajuste-tamano(90%,90%);
                     .talento{
-                        font-size: 1.9rem;
-                        margin: 10px;
-                    }
-                    .t1{
-                        @include ajuste-tamano(85px,85px);
-                    }
-                    .t2{
-                        @include ajuste-tamano(85px,85px);
-                    }
-                    .t3{
-                        @include ajuste-tamano(85px,85px);
+                        padding-inline: 50px;
                     }
                     .pasivas{
-                        font-size: 1.9rem;
-                        margin: 10px;
+                        padding-inline: 50px;
                     }
-                    .p1{
-                        @include ajuste-tamano(85px,85px);
-                    }
-                    .p2{
-                        @include ajuste-tamano(85px,85px);
-                    }
-                    .p3{
-                        @include ajuste-tamano(85px,85px);
-                    }
-                }
-                .armas{
-                    h2{
-                        font-size: 2rem;
-                        margin: 10px;
-                    }
-                    .img{
-                        img{
-                            @include ajuste-tamano (130px,130px)
-                        }
-                    }
-                }
-                .grupos{
-                    @include ajuste-tamano(90%,90%);
-                    h2{
-                        font-size: 2rem;
-                    }
-                    .img{
-                        img{
-                            @include ajuste-tamano(100px,100px);
+                    @each $i in ( p, t) {
+                        @for $j from 1 to 4 {
+                            .#{$i}#{$j}{
+                                @include ajuste-tamano(80px,80px);
+                            }
                         }
                     }
                 }
                 .constelacion{
-                    h2{
-                        font-size: 2rem;
-                    }
                     img{
-                        @include ajuste-tamano(90%, 90%);
+                        @include ajuste-tamano(85%,85%);
+                    }
+                }
+                .armas{
+                    .img{
+                        img{
+                            @include ajuste-tamano(120px,120px);
+                        }
+                    }
+                }
+                .grupos{
+                    .img{
+                        width: 100%;
+                        text-align: center;
+                        img{
+                            @include ajuste-tamano(80px,80px);
+                        }
                     }
                 }
             }
-            background-image: url(../img/home/fondo_pagina_compu);
-            background-size: cover;
-        }
-        footer{
-            width: 100vw;
         }
     }
         /*  Registro*/

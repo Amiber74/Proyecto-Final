@@ -30,14 +30,14 @@
     height: $heigth;
 }
 .fondo{
-    padding: 5px;
+    padding: 15px 20px;
+    @extend .centrar;
     border-radius: 20px;
     background-color: rgba(128, 128, 128, 0.452);
-    padding-inline: 5px;
 }
 .tarjeta_personaje{
     display: grid;
-    width: 100vw;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 1fr 150px;
     grid-template-areas: 
@@ -148,31 +148,59 @@
             @include ajuste-tamano(100%,90%);
             .reloj{
                 grid-area:reloj;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr;
+                grid-template-areas: "img" "p";
                 text-align: center;
                 padding: 10px;
                 @extend .fondo;
-                @extend .centrar;
+                img{
+                    grid-area: img;
+                    @extend .centrar;
+                }
                 p{
+                    grid-area: p;
+                    @extend .centrar;
+                    @include ajuste-tamano(100%,100%);
                     font-size: 0.8rem;
                 }
             }
             .caliz{
                 grid-area: caliz;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr;
+                grid-template-areas: "img" "p";
                 text-align: center;
                 padding: 10px;
                 @extend .fondo;
-                @extend .centrar;
+                img{
+                    grid-area: img;
+                    @extend .centrar;
+                }
                 p{
+                    grid-area: p;
+                    @extend .centrar;
+                    @include ajuste-tamano(100%,100%);
                     font-size: 0.8rem;
                 }
             }
             .corona{
                 grid-area: corona;
+                grid-template-columns: 1fr;
+                grid-template-rows: 2fr 1fr;
+                grid-template-areas: "img" "p";
                 text-align: center;
                 padding: 10px;
                 @extend .fondo;
-                @extend .centrar;
+                img{
+                    @extend .centrar;
+                    grid-area: img;
+                }
                 p{
+                    grid-area: p;
+                    @extend .centrar;
+                    @include ajuste-tamano(100%,100%);
                     font-size: 0.8rem;
                 }
             }
@@ -285,7 +313,7 @@
                     margin: 5px;
                     background-color:darkgrey;
                     border-radius: 20px;
-                    @include ajuste-tamano(110px,110px)
+                    @include ajuste-tamano(110px,110px);
                 }
             }
         }
@@ -306,7 +334,7 @@
             }
             .img{
                 grid-area: img;
-                text-align: center;
+                @extend .centrar;
                 img{
                     padding: 5px;
                     margin: 5px;

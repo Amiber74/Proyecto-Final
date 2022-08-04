@@ -1101,21 +1101,20 @@ main .trailer iframe {
   background-color: #aa2e25;
 }
 
-.centrar, .tarjeta_personaje main .armas .img, .tarjeta_personaje main .armas h2, .tarjeta_personaje main .constelacion img, .tarjeta_personaje main .constelacion h2, .tarjeta_personaje main .talentos .p3, .tarjeta_personaje main .talentos .p2, .tarjeta_personaje main .talentos .p1, .tarjeta_personaje main .talentos .t3, .tarjeta_personaje main .talentos .t2, .tarjeta_personaje main .talentos .t1, .tarjeta_personaje main .stats p.texto, .tarjeta_personaje main .stats .corona, .tarjeta_personaje main .stats .caliz, .tarjeta_personaje main .stats .reloj, .tarjeta_personaje main .p_artefactos .img_a, .tarjeta_personaje main .personaje, .tarjeta_personaje header div h1 {
+.centrar, .tarjeta_personaje main .grupos .img, .tarjeta_personaje main .armas .img, .tarjeta_personaje main .armas h2, .tarjeta_personaje main .constelacion img, .tarjeta_personaje main .constelacion h2, .tarjeta_personaje main .talentos .p3, .tarjeta_personaje main .talentos .p2, .tarjeta_personaje main .talentos .p1, .tarjeta_personaje main .talentos .t3, .tarjeta_personaje main .talentos .t2, .tarjeta_personaje main .talentos .t1, .tarjeta_personaje main .stats p.texto, .tarjeta_personaje main .stats .corona p, .tarjeta_personaje main .stats .corona img, .tarjeta_personaje main .stats .caliz p, .tarjeta_personaje main .stats .caliz img, .tarjeta_personaje main .stats .reloj p, .tarjeta_personaje main .stats .reloj img, .tarjeta_personaje main .p_artefactos .img_a, .tarjeta_personaje header div h1, .fondo, .tarjeta_personaje main .grupos h2, .tarjeta_personaje main .talentos .pasivas, .tarjeta_personaje main .talentos .talento, .tarjeta_personaje main .stats p.texto strong, .tarjeta_personaje main .stats .corona, .tarjeta_personaje main .stats .caliz, .tarjeta_personaje main .stats .reloj, .tarjeta_personaje main .p_artefactos p, .tarjeta_personaje main .info, .tarjeta_personaje main .personaje {
   justify-self: center;
   align-self: center;
 }
 
 .fondo, .tarjeta_personaje main .grupos h2, .tarjeta_personaje main .armas h2, .tarjeta_personaje main .constelacion h2, .tarjeta_personaje main .talentos .pasivas, .tarjeta_personaje main .talentos .talento, .tarjeta_personaje main .stats p.texto strong, .tarjeta_personaje main .stats .corona, .tarjeta_personaje main .stats .caliz, .tarjeta_personaje main .stats .reloj, .tarjeta_personaje main .p_artefactos p, .tarjeta_personaje main .info, .tarjeta_personaje main .personaje {
-  padding: 5px;
+  padding: 15px 20px;
   border-radius: 20px;
   background-color: rgba(128, 128, 128, 0.452);
-  padding-inline: 5px;
 }
 
 .tarjeta_personaje {
   display: grid;
-  width: 100vw;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 100px 1fr 150px;
   grid-template-areas: "header" "main" "footer";
@@ -1214,26 +1213,54 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .stats .reloj {
   grid-area: reloj;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "img" "p";
   text-align: center;
   padding: 10px;
 }
+.tarjeta_personaje main .stats .reloj img {
+  grid-area: img;
+}
 .tarjeta_personaje main .stats .reloj p {
+  grid-area: p;
+  width: 100%;
+  height: 100%;
   font-size: 0.8rem;
 }
 .tarjeta_personaje main .stats .caliz {
   grid-area: caliz;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "img" "p";
   text-align: center;
   padding: 10px;
 }
+.tarjeta_personaje main .stats .caliz img {
+  grid-area: img;
+}
 .tarjeta_personaje main .stats .caliz p {
+  grid-area: p;
+  width: 100%;
+  height: 100%;
   font-size: 0.8rem;
 }
 .tarjeta_personaje main .stats .corona {
   grid-area: corona;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "img" "p";
   text-align: center;
   padding: 10px;
 }
+.tarjeta_personaje main .stats .corona img {
+  grid-area: img;
+}
 .tarjeta_personaje main .stats .corona p {
+  grid-area: p;
+  width: 100%;
+  height: 100%;
   font-size: 0.8rem;
 }
 .tarjeta_personaje main .stats p.texto {
@@ -1353,7 +1380,6 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .grupos .img {
   grid-area: img;
-  text-align: center;
 }
 .tarjeta_personaje main .grupos .img img {
   padding: 5px;
@@ -1855,7 +1881,7 @@ main .trailer iframe {
     font-size: 2rem;
   }
   .tarjeta_personaje header h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
   }
   .tarjeta_personaje main {
@@ -1863,29 +1889,33 @@ main .trailer iframe {
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: "img img img img img" "img img img img img" "info info info info info" "artefactos artefactos prioridades prioridades prioridades" "talentos talentos constelacion constelacion constelacion" "armas armas sinergia sinergia sinergia";
   }
-  .tarjeta_personaje .p_artefactos .img_a {
-    text-align: center;
+  .tarjeta_personaje .p_artefactos p {
+    width: 90%;
+  }
+  .tarjeta_personaje .p_artefactos .img_a img {
+    width: 100px;
+    height: 100px;
   }
   .tarjeta_personaje .stats {
     padding: 5px;
   }
   .tarjeta_personaje .stats .reloj {
     width: 100%;
-    height: 50%;
+    height: 70%;
   }
   .tarjeta_personaje .stats .reloj p strong {
     font-size: 1.3rem;
   }
   .tarjeta_personaje .stats .caliz {
     width: 100%;
-    height: 50%;
+    height: 70%;
   }
   .tarjeta_personaje .stats .caliz p strong {
     font-size: 1.3rem;
   }
   .tarjeta_personaje .stats .corona {
     width: 100%;
-    height: 50%;
+    height: 70%;
   }
   .tarjeta_personaje .stats .corona p strong {
     font-size: 1.3rem;
@@ -1904,24 +1934,19 @@ main .trailer iframe {
   .tarjeta_personaje .grupos {
     padding: 5px;
   }
+  .tarjeta_personaje .grupos .img {
+    text-align: center;
+  }
   .tarjeta_personaje .grupos .img img {
     width: 75px;
     height: 75px;
   }
 }
 @media (min-width: 1020px) {
-  .tarjeta_personaje {
-    background-image: url(../img/home/fondo_pagina_compu);
-    background-size: cover;
-  }
-  .tarjeta_personaje header {
-    width: 100vw;
-  }
   .tarjeta_personaje header div {
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
-    grid-template-areas: "boton nombre nombre nombre";
+    grid-template-areas: "boton nombre nombre nombre nombre";
   }
   .tarjeta_personaje header div h1 {
     font-size: 3rem;
@@ -1931,144 +1956,101 @@ main .trailer iframe {
     font-size: 2rem;
   }
   .tarjeta_personaje main {
+    padding: 10px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 100vw;
-    grid-template-areas: "img img img  artefactos artefactos artefactos info info" "img img img  prioridades prioridades prioridades constelacion constelacion" "img img img  prioridades prioridades prioridades constelacion constelacion" "talentos talentos armas armas armas sinergia sinergia sinergia" "talentos talentos armas armas armas sinergia sinergia sinergia";
+    grid-template-areas: "img img img artefactos artefactos artefactos info info" "img img img prioridades prioridades prioridades constelacion constelacion" "img img img prioridades prioridades prioridades constelacion constelacion" "talentos talentos armas armas armas sinergia sinergia sinergia" "talentos talentos armas armas armas sinergia sinergia sinergia";
   }
-  .tarjeta_personaje main .stats {
-    width: 90%;
-    height: 90%;
-  }
-  .tarjeta_personaje main .stats .reloj {
-    justify-self: center;
-    align-self: center;
-    margin: 2px;
-    width: 95%;
-    height: 60%;
-  }
-  .tarjeta_personaje main .stats .reloj img {
-    width: 90px;
-    height: 100px;
-  }
-  .tarjeta_personaje main .stats .reloj p strong {
-    font-size: 1.3rem;
-  }
-  .tarjeta_personaje main .stats .caliz {
-    justify-self: center;
-    align-self: center;
-    margin: 2px;
-    width: 95%;
-    height: 60%;
-  }
-  .tarjeta_personaje main .stats .caliz img {
-    width: 90px;
-    height: 100px;
-  }
-  .tarjeta_personaje main .stats .caliz p strong {
-    font-size: 1.3rem;
-  }
-  .tarjeta_personaje main .stats .corona {
-    justify-self: center;
-    align-self: center;
-    margin: 2px;
-    width: 95%;
-    height: 60%;
-  }
-  .tarjeta_personaje main .stats .corona img {
-    width: 90px;
-    height: 100px;
-  }
-  .tarjeta_personaje main .stats .corona p strong {
-    font-size: 1.3rem;
-  }
-  .tarjeta_personaje main .stats p.texto {
-    font-size: 1.6rem;
-  }
-  .tarjeta_personaje main .p_artefactos {
-    padding: 15px;
-  }
-  .tarjeta_personaje main .p_artefactos p {
+  .tarjeta_personaje main h2 {
     font-size: 2rem;
   }
+  .tarjeta_personaje main .info {
+    justify-self: center;
+    align-self: center;
+  }
+  .tarjeta_personaje main .info strong {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  .tarjeta_personaje main .p_artefactos p {
+    width: 90%;
+  }
   .tarjeta_personaje main .p_artefactos .img_a {
-    width: 100%;
     text-align: center;
   }
   .tarjeta_personaje main .p_artefactos .img_a img {
     width: 100px;
     height: 100px;
   }
-  .tarjeta_personaje main .info {
-    width: 90%;
-    height: 90%;
-    padding: 30px;
-    font-size: 1.5rem;
+  .tarjeta_personaje main .stats .reloj img {
+    width: 80px;
+    height: 80px;
   }
-  .tarjeta_personaje main .talentos {
-    width: 90%;
-    height: 90%;
+  .tarjeta_personaje main .stats .reloj p strong {
+    font-size: 1.2rem;
+  }
+  .tarjeta_personaje main .stats .caliz img {
+    width: 80px;
+    height: 80px;
+  }
+  .tarjeta_personaje main .stats .caliz p strong {
+    font-size: 1.2rem;
+  }
+  .tarjeta_personaje main .stats .corona img {
+    width: 80px;
+    height: 80px;
+  }
+  .tarjeta_personaje main .stats .corona p strong {
+    font-size: 1.2rem;
+  }
+  .tarjeta_personaje main .stats p.texto strong {
+    font-size: 1.2rem;
   }
   .tarjeta_personaje main .talentos .talento {
-    font-size: 1.9rem;
-    margin: 10px;
-  }
-  .tarjeta_personaje main .talentos .t1 {
-    width: 85px;
-    height: 85px;
-  }
-  .tarjeta_personaje main .talentos .t2 {
-    width: 85px;
-    height: 85px;
-  }
-  .tarjeta_personaje main .talentos .t3 {
-    width: 85px;
-    height: 85px;
+    padding-inline: 50px;
   }
   .tarjeta_personaje main .talentos .pasivas {
-    font-size: 1.9rem;
-    margin: 10px;
+    padding-inline: 50px;
   }
   .tarjeta_personaje main .talentos .p1 {
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
   }
   .tarjeta_personaje main .talentos .p2 {
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
   }
   .tarjeta_personaje main .talentos .p3 {
-    width: 85px;
-    height: 85px;
+    width: 80px;
+    height: 80px;
   }
-  .tarjeta_personaje main .armas h2 {
-    font-size: 2rem;
-    margin: 10px;
+  .tarjeta_personaje main .talentos .t1 {
+    width: 80px;
+    height: 80px;
   }
-  .tarjeta_personaje main .armas .img img {
-    width: 130px;
-    height: 130px;
+  .tarjeta_personaje main .talentos .t2 {
+    width: 80px;
+    height: 80px;
   }
-  .tarjeta_personaje main .grupos {
-    width: 90%;
-    height: 90%;
-  }
-  .tarjeta_personaje main .grupos h2 {
-    font-size: 2rem;
-  }
-  .tarjeta_personaje main .grupos .img img {
-    width: 100px;
-    height: 100px;
-  }
-  .tarjeta_personaje main .constelacion h2 {
-    font-size: 2rem;
+  .tarjeta_personaje main .talentos .t3 {
+    width: 80px;
+    height: 80px;
   }
   .tarjeta_personaje main .constelacion img {
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 85%;
   }
-  footer {
-    width: 100vw;
+  .tarjeta_personaje main .armas .img img {
+    width: 120px;
+    height: 120px;
+  }
+  .tarjeta_personaje main .grupos .img {
+    width: 100%;
+    text-align: center;
+  }
+  .tarjeta_personaje main .grupos .img img {
+    width: 80px;
+    height: 80px;
   }
 }
 /*  Registro*/
