@@ -19,7 +19,7 @@
 .div{
     border: 2px solid black;
     border-radius: 5px;
-    background-color: rgba(128, 128, 128, 0.267);
+    background-color: $fondo_items;
     justify-self: center;
     align-self: center;
 }
@@ -51,6 +51,9 @@
         }
         @for $i from 1 to 7{
             .p_#{$i}{
+                &:hover{
+                    background-color:$fondo_interactua;
+                }
                 @extend .div;
                 img{
                     grid-area:p_#{$i};
@@ -77,6 +80,9 @@
         }
         @for $i from 1 to 11 {
             .p_#{$i}{
+                &:hover{
+                    background-color:$fondo_interactua;
+                }
                 @extend .div;
                 img{
                     grid-area: p_#{$i};
@@ -103,6 +109,9 @@
         }
         @for $i from 1 to 8 {
             .p_#{$i}{
+                &:hover{
+                    background-color:$fondo_interactua;
+                }
                 @extend .div;
                 img{
                     grid-area:p_#{$i};
@@ -129,6 +138,9 @@
         }
         @for $i from 1 to 11 {
             .p_#{$i}{
+                &:hover{
+                    background-color:$fondo_interactua;
+                }
                 @extend .div;
                 img{
                     grid-area:p_#{$i};
@@ -155,6 +167,9 @@
         }
         @for $i from 1 to 10{
             .p_#{$i}{
+                &:hover{
+                    background-color:$fondo_interactua;
+                }
                 @extend .div;
                 img{
                     grid-area:p_#{$i};
@@ -180,6 +195,9 @@
         }
         @for $i from 1 to 8{
             .p_#{$i}{
+                &:hover{
+                    background-color:$fondo_interactua;
+                }
                 @extend .div;
                 img{
                     grid-area: p_#{$i};

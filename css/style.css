@@ -360,7 +360,7 @@ main .trailer iframe {
   height: 120px;
 }
 .armas .cn_estrellas div:hover {
-  background-color: rgba(128, 128, 128, 0.507);
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .armas .cn_estrellas h2 {
   grid-area: titulo;
@@ -368,304 +368,304 @@ main .trailer iframe {
   text-decoration: underline;
 }
 .armas .cn_estrellas .Apos_0 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_0 img {
   grid-area: Apos_0;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_1 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_1 img {
   grid-area: Apos_1;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_2 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_2 img {
   grid-area: Apos_2;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_3 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_3 img {
   grid-area: Apos_3;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_4 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_4 img {
   grid-area: Apos_4;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_5 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_5 img {
   grid-area: Apos_5;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_6 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_6 img {
   grid-area: Apos_6;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_7 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_7 img {
   grid-area: Apos_7;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_8 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_8 img {
   grid-area: Apos_8;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_9 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_9 img {
   grid-area: Apos_9;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_10 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_10 img {
   grid-area: Apos_10;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_11 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_11 img {
   grid-area: Apos_11;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_12 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_12 img {
   grid-area: Apos_12;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_13 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_13 img {
   grid-area: Apos_13;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_14 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_14 img {
   grid-area: Apos_14;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_15 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_15 img {
   grid-area: Apos_15;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_16 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_16 img {
   grid-area: Apos_16;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_17 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_17 img {
   grid-area: Apos_17;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_18 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_18 img {
   grid-area: Apos_18;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_19 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_19 img {
   grid-area: Apos_19;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_20 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_20 img {
   grid-area: Apos_20;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_21 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_21 img {
   grid-area: Apos_21;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_22 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_22 img {
   grid-area: Apos_22;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_23 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_23 img {
   grid-area: Apos_23;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_24 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_24 img {
   grid-area: Apos_24;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_25 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_25 img {
   grid-area: Apos_25;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_26 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_26 img {
   grid-area: Apos_26;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_27 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_27 img {
   grid-area: Apos_27;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_28 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_28 img {
   grid-area: Apos_28;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 .armas .cn_estrellas .Apos_29 {
-  border: 2px solid black;
+  border: 2.5px solid black;
   border-radius: 5px;
 }
 .armas .cn_estrellas .Apos_29 img {
   grid-area: Apos_29;
-  width: 116px;
-  height: 116px;
-  background-color: rgba(128, 128, 128, 0.39);
+  width: 115px;
+  height: 115px;
+  background-color: rgba(81, 53, 107, 0.27);
 }
 
 .ajustar, .noticias .n_6 h2, .noticias .n_6 img, .noticias .n_5 h2, .noticias .n_5 img, .noticias .n_4 h2, .noticias .n_4 img, .noticias .n_3 h2, .noticias .n_3 img, .noticias .n_2 h2, .noticias .n_2 img, .noticias .n_1 h2, .noticias .n_1 img {
@@ -789,7 +789,7 @@ main .trailer iframe {
 .div, .personajes .geo .p_7, .personajes .geo .p_6, .personajes .geo .p_5, .personajes .geo .p_4, .personajes .geo .p_3, .personajes .geo .p_2, .personajes .geo .p_1, .personajes .electro .p_9, .personajes .electro .p_8, .personajes .electro .p_7, .personajes .electro .p_6, .personajes .electro .p_5, .personajes .electro .p_4, .personajes .electro .p_3, .personajes .electro .p_2, .personajes .electro .p_1, .personajes .cryo .p_10, .personajes .cryo .p_9, .personajes .cryo .p_8, .personajes .cryo .p_7, .personajes .cryo .p_6, .personajes .cryo .p_5, .personajes .cryo .p_4, .personajes .cryo .p_3, .personajes .cryo .p_2, .personajes .cryo .p_1, .personajes .hydro .p_7, .personajes .hydro .p_6, .personajes .hydro .p_5, .personajes .hydro .p_4, .personajes .hydro .p_3, .personajes .hydro .p_2, .personajes .hydro .p_1, .personajes .pyro .p_10, .personajes .pyro .p_9, .personajes .pyro .p_8, .personajes .pyro .p_7, .personajes .pyro .p_6, .personajes .pyro .p_5, .personajes .pyro .p_4, .personajes .pyro .p_3, .personajes .pyro .p_2, .personajes .pyro .p_1, .personajes .anemo .p_6, .personajes .anemo .p_5, .personajes .anemo .p_4, .personajes .anemo .p_3, .personajes .anemo .p_2, .personajes .anemo .p_1 {
   border: 2px solid black;
   border-radius: 5px;
-  background-color: rgba(128, 128, 128, 0.267);
+  background-color: rgba(81, 53, 107, 0.27);
   justify-self: center;
   align-self: center;
 }
@@ -808,30 +808,48 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo" "p_1 p_2 p_3" "p_4 p_5 p_6";
   background-image: url(../Img/personajes/anemo/Anemo.webp);
 }
+.personajes .anemo .p_1:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .anemo .p_1 img {
   grid-area: p_1;
   width: 100%;
   height: 100%;
+}
+.personajes .anemo .p_2:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .anemo .p_2 img {
   grid-area: p_2;
   width: 100%;
   height: 100%;
 }
+.personajes .anemo .p_3:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .anemo .p_3 img {
   grid-area: p_3;
   width: 100%;
   height: 100%;
+}
+.personajes .anemo .p_4:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .anemo .p_4 img {
   grid-area: p_4;
   width: 100%;
   height: 100%;
 }
+.personajes .anemo .p_5:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .anemo .p_5 img {
   grid-area: p_5;
   width: 100%;
   height: 100%;
+}
+.personajes .anemo .p_6:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .anemo .p_6 img {
   grid-area: p_6;
@@ -846,50 +864,80 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" "p_9 p_10 . . ";
   background-image: url(../Img/personajes/pyro/Pyro.webp);
 }
+.personajes .pyro .p_1:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .pyro .p_1 img {
   grid-area: p_1;
   width: 100%;
   height: 100%;
+}
+.personajes .pyro .p_2:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .pyro .p_2 img {
   grid-area: p_2;
   width: 100%;
   height: 100%;
 }
+.personajes .pyro .p_3:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .pyro .p_3 img {
   grid-area: p_3;
   width: 100%;
   height: 100%;
+}
+.personajes .pyro .p_4:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .pyro .p_4 img {
   grid-area: p_4;
   width: 100%;
   height: 100%;
 }
+.personajes .pyro .p_5:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .pyro .p_5 img {
   grid-area: p_5;
   width: 100%;
   height: 100%;
+}
+.personajes .pyro .p_6:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .pyro .p_6 img {
   grid-area: p_6;
   width: 100%;
   height: 100%;
 }
+.personajes .pyro .p_7:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .pyro .p_7 img {
   grid-area: p_7;
   width: 100%;
   height: 100%;
+}
+.personajes .pyro .p_8:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .pyro .p_8 img {
   grid-area: p_8;
   width: 100%;
   height: 100%;
 }
+.personajes .pyro .p_9:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .pyro .p_9 img {
   grid-area: p_9;
   width: 100%;
   height: 100%;
+}
+.personajes .pyro .p_10:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .pyro .p_10 img {
   grid-area: p_10;
@@ -904,35 +952,56 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 .";
   background-image: url(../Img/personajes/hydro/Hydro.webp);
 }
+.personajes .hydro .p_1:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .hydro .p_1 img {
   grid-area: p_1;
   width: 100%;
   height: 100%;
+}
+.personajes .hydro .p_2:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .hydro .p_2 img {
   grid-area: p_2;
   width: 100%;
   height: 100%;
 }
+.personajes .hydro .p_3:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .hydro .p_3 img {
   grid-area: p_3;
   width: 100%;
   height: 100%;
+}
+.personajes .hydro .p_4:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .hydro .p_4 img {
   grid-area: p_4;
   width: 100%;
   height: 100%;
 }
+.personajes .hydro .p_5:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .hydro .p_5 img {
   grid-area: p_5;
   width: 100%;
   height: 100%;
 }
+.personajes .hydro .p_6:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .hydro .p_6 img {
   grid-area: p_6;
   width: 100%;
   height: 100%;
+}
+.personajes .hydro .p_7:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .hydro .p_7 img {
   grid-area: p_7;
@@ -947,50 +1016,80 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" "p_9 p_10 . .";
   background-image: url(../Img/personajes/cryo/Cryo.webp);
 }
+.personajes .cryo .p_1:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .cryo .p_1 img {
   grid-area: p_1;
   width: 100%;
   height: 100%;
+}
+.personajes .cryo .p_2:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .cryo .p_2 img {
   grid-area: p_2;
   width: 100%;
   height: 100%;
 }
+.personajes .cryo .p_3:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .cryo .p_3 img {
   grid-area: p_3;
   width: 100%;
   height: 100%;
+}
+.personajes .cryo .p_4:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .cryo .p_4 img {
   grid-area: p_4;
   width: 100%;
   height: 100%;
 }
+.personajes .cryo .p_5:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .cryo .p_5 img {
   grid-area: p_5;
   width: 100%;
   height: 100%;
+}
+.personajes .cryo .p_6:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .cryo .p_6 img {
   grid-area: p_6;
   width: 100%;
   height: 100%;
 }
+.personajes .cryo .p_7:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .cryo .p_7 img {
   grid-area: p_7;
   width: 100%;
   height: 100%;
+}
+.personajes .cryo .p_8:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .cryo .p_8 img {
   grid-area: p_8;
   width: 100%;
   height: 100%;
 }
+.personajes .cryo .p_9:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .cryo .p_9 img {
   grid-area: p_9;
   width: 100%;
   height: 100%;
+}
+.personajes .cryo .p_10:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .cryo .p_10 img {
   grid-area: p_10;
@@ -1005,45 +1104,72 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" "p_9 . . .";
   background-image: url(../Img/personajes/electro/Electro.webp);
 }
+.personajes .electro .p_1:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .electro .p_1 img {
   grid-area: p_1;
   width: 100%;
   height: 100%;
+}
+.personajes .electro .p_2:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .electro .p_2 img {
   grid-area: p_2;
   width: 100%;
   height: 100%;
 }
+.personajes .electro .p_3:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .electro .p_3 img {
   grid-area: p_3;
   width: 100%;
   height: 100%;
+}
+.personajes .electro .p_4:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .electro .p_4 img {
   grid-area: p_4;
   width: 100%;
   height: 100%;
 }
+.personajes .electro .p_5:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .electro .p_5 img {
   grid-area: p_5;
   width: 100%;
   height: 100%;
+}
+.personajes .electro .p_6:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .electro .p_6 img {
   grid-area: p_6;
   width: 100%;
   height: 100%;
 }
+.personajes .electro .p_7:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .electro .p_7 img {
   grid-area: p_7;
   width: 100%;
   height: 100%;
 }
+.personajes .electro .p_8:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .electro .p_8 img {
   grid-area: p_8;
   width: 100%;
   height: 100%;
+}
+.personajes .electro .p_9:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .electro .p_9 img {
   grid-area: p_9;
@@ -1058,35 +1184,56 @@ main .trailer iframe {
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 .";
   background-image: url(../Img/personajes/geo/Geo.webp);
 }
+.personajes .geo .p_1:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .geo .p_1 img {
   grid-area: p_1;
   width: 100%;
   height: 100%;
+}
+.personajes .geo .p_2:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .geo .p_2 img {
   grid-area: p_2;
   width: 100%;
   height: 100%;
 }
+.personajes .geo .p_3:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .geo .p_3 img {
   grid-area: p_3;
   width: 100%;
   height: 100%;
+}
+.personajes .geo .p_4:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .geo .p_4 img {
   grid-area: p_4;
   width: 100%;
   height: 100%;
 }
+.personajes .geo .p_5:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .geo .p_5 img {
   grid-area: p_5;
   width: 100%;
   height: 100%;
 }
+.personajes .geo .p_6:hover {
+  background-color: rgba(81, 53, 107, 0.76);
+}
 .personajes .geo .p_6 img {
   grid-area: p_6;
   width: 100%;
   height: 100%;
+}
+.personajes .geo .p_7:hover {
+  background-color: rgba(81, 53, 107, 0.76);
 }
 .personajes .geo .p_7 img {
   grid-area: p_7;
@@ -1519,7 +1666,7 @@ main .trailer iframe {
   .pagina header h1 {
     grid-area: titulo;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .pagina header .navegador {
     grid-area: navegador;

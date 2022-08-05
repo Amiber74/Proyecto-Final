@@ -4,7 +4,7 @@
             width: 120px;
             height: 120px;
             &:hover{
-                background-color: rgba(128, 128, 128, 0.507);
+                background-color: $fondo_interactua;
             }
         }
         display: grid;
@@ -34,13 +34,13 @@
         }
         @for $i from 0 to 30{
             .Apos_#{$i}{
-                border: 2px solid black;
+                border: 2.5px solid black;
                 border-radius: 5px;
                 img{
                     grid-area: Apos_#{$i};
-                    width: 116px;
-                    height: 116px;
-                    background-color: rgba(128, 128, 128, 0.39);
+                    width: 115px;
+                    height: 115px;
+                    background-color: $fondo_items;
                 }
             }
         }
