@@ -40,7 +40,7 @@
   color: white;
   text-shadow: 0 0 15px black;
   text-decoration: none;
-  list-style-type: none;
+  list-style: none;
 }
 .pagina main {
   grid-area: main;
@@ -112,176 +112,176 @@ main .trailer iframe {
 }
 .main-artefactos .mondstand .mpos_1 img {
   grid-area: pos_1;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_2 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_2 img {
   grid-area: pos_2;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_3 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_3 img {
   grid-area: pos_3;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_4 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_4 img {
   grid-area: pos_4;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_5 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_5 img {
   grid-area: pos_5;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_6 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_6 img {
   grid-area: pos_6;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_7 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_7 img {
   grid-area: pos_7;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .mondstand .mpos_8 {
   padding: 5px;
 }
 .main-artefactos .mondstand .mpos_8 img {
   grid-area: pos_8;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_1 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_1 img {
   grid-area: pos_1;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_2 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_2 img {
   grid-area: pos_2;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_3 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_3 img {
   grid-area: pos_3;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_4 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_4 img {
   grid-area: pos_4;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_5 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_5 img {
   grid-area: pos_5;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_6 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_6 img {
   grid-area: pos_6;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_7 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_7 img {
   grid-area: pos_7;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .liyue .lpos_8 {
   padding: 5px;
 }
 .main-artefactos .liyue .lpos_8 img {
   grid-area: pos_8;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .inazuma .ipos_1 {
   padding: 5px;
 }
 .main-artefactos .inazuma .ipos_1 img {
   grid-area: pos_1;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .inazuma .ipos_2 {
   padding: 5px;
 }
 .main-artefactos .inazuma .ipos_2 img {
   grid-area: pos_2;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .inazuma .ipos_3 {
   padding: 5px;
 }
 .main-artefactos .inazuma .ipos_3 img {
   grid-area: pos_3;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .inazuma .ipos_4 {
   padding: 5px;
 }
 .main-artefactos .inazuma .ipos_4 img {
   grid-area: pos_4;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .inazuma .ipos_5 {
   padding: 5px;
 }
 .main-artefactos .inazuma .ipos_5 img {
   grid-area: pos_5;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 .main-artefactos .inazuma .ipos_6 {
   padding: 5px;
 }
 .main-artefactos .inazuma .ipos_6 img {
   grid-area: pos_6;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
 }
 
 /* Estrucura de la pagina */
