@@ -1230,7 +1230,9 @@ main .trailer iframe {
   grid-template-rows: 2fr 1fr;
   grid-template-areas: "img" "p";
   text-align: center;
-  padding: 10px;
+  width: 90%;
+  height: 90%;
+  padding: 5px;
 }
 .tarjeta_personaje main .stats .reloj img {
   grid-area: img;
@@ -1248,7 +1250,9 @@ main .trailer iframe {
   grid-template-rows: 2fr 1fr;
   grid-template-areas: "img" "p";
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+  width: 90%;
+  height: 90%;
 }
 .tarjeta_personaje main .stats .caliz img {
   grid-area: img;
@@ -1266,7 +1270,9 @@ main .trailer iframe {
   grid-template-rows: 2fr 1fr;
   grid-template-areas: "img" "p";
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+  width: 90%;
+  height: 90%;
 }
 .tarjeta_personaje main .stats .corona img {
   grid-area: img;
