@@ -89,11 +89,12 @@
         "constelacion"
         "armas"
         "sinergia";
+        
         .personaje{
             grid-area: img;
             padding: 20px;
             width: 85%;
-            height: 85%;
+            height: 80%;
             @extend .fondo;
             @extend .centrar;
             background-color: rgba(0, 0, 0, 0.600);
@@ -164,7 +165,7 @@
                     grid-area: p;
                     @extend .centrar;
                     @include ajuste-tamano(100%,100%);
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
             }
             .caliz{
@@ -185,7 +186,7 @@
                     grid-area: p;
                     @extend .centrar;
                     @include ajuste-tamano(100%,100%);
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
             }
             .corona{
@@ -206,7 +207,7 @@
                     grid-area: p;
                     @extend .centrar;
                     @include ajuste-tamano(100%,100%);
-                    font-size: 0.8rem;
+                    font-size: 0.9rem;
                 }
             }
             p.texto{
