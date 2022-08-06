@@ -96,7 +96,6 @@
             width: 85%;
             height: 80%;
             @extend .fondo;
-            @extend .centrar;
             background-color: rgba(0, 0, 0, 0.600);
         }
         .info{
@@ -368,9 +367,15 @@
         h2{
             font-size: 1.8rem;
         }
-        a{
-            text-decoration: none;
-            color: black;
+        ul{
+            list-style-type: none;
+        }
+        section{
+            justify-self: center;
+            align-self: center;
+            ul{
+                list-style-type: none;
+            }
         }
     }
 }

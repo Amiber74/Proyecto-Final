@@ -1350,6 +1350,7 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .p_artefactos .img_a {
   grid-area: img;
+  text-align: center;
 }
 .tarjeta_personaje main .p_artefactos .img_a img {
   padding: 5px;
@@ -1547,6 +1548,7 @@ main .trailer iframe {
 }
 .tarjeta_personaje main .grupos .img {
   grid-area: img;
+  text-align: center;
 }
 .tarjeta_personaje main .grupos .img img {
   padding: 5px;
@@ -1567,9 +1569,15 @@ main .trailer iframe {
 .tarjeta_personaje footer h2 {
   font-size: 1.8rem;
 }
-.tarjeta_personaje footer a {
-  text-decoration: none;
-  color: black;
+.tarjeta_personaje footer ul {
+  list-style-type: none;
+}
+.tarjeta_personaje footer section {
+  justify-self: center;
+  align-self: center;
+}
+.tarjeta_personaje footer section ul {
+  list-style-type: none;
 }
 
 .ajuste_form, .registro .form #campo_opinion, .registro .form #campo_contraseña, .registro .form #campo_email, .registro .form #campo_nombre {
@@ -1744,16 +1752,170 @@ main .trailer iframe {
     grid-template-rows: 1fr repeat(4, 2fr);
     grid-template-areas: "titulo titulo" "pos_1 pos_2" "pos_3 pos_4" "pos_5 pos_6" "pos_7 pos_8";
   }
+  .main-artefactos .mondstand .mpos_1 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_2 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_2 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_3 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_3 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_4 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_4 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_5 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_5 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_6 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_6 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_7 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_7 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .mondstand .mpos_8 {
+    padding: 5px;
+  }
+  .main-artefactos .mondstand .mpos_8 img {
+    width: 80px;
+    height: 80px;
+  }
   .main-artefactos .liyue {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr repeat(4, 2fr);
     grid-template-areas: "titulo titulo" "pos_1 pos_2" "pos_3 pos_4" "pos_5 pos_6" "pos_7 pos_8";
   }
+  .main-artefactos .liyue .lpos_1 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_2 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_2 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_3 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_3 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_4 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_4 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_5 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_5 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_6 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_6 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_7 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_7 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .liyue .lpos_8 {
+    padding: 5px;
+  }
+  .main-artefactos .liyue .lpos_8 img {
+    width: 80px;
+    height: 80px;
+  }
   .main-artefactos .inazuma {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr repeat(3, 2fr);
     grid-template-areas: "titulo titulo" "pos_1 pos_2" "pos_3 pos_4" "pos_5 pos_6";
+  }
+  .main-artefactos .inazuma .ipos_1 {
+    padding: 5px;
+  }
+  .main-artefactos .inazuma .ipos_1 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .inazuma .ipos_2 {
+    padding: 5px;
+  }
+  .main-artefactos .inazuma .ipos_2 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .inazuma .ipos_3 {
+    padding: 5px;
+  }
+  .main-artefactos .inazuma .ipos_3 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .inazuma .ipos_4 {
+    padding: 5px;
+  }
+  .main-artefactos .inazuma .ipos_4 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .inazuma .ipos_5 {
+    padding: 5px;
+  }
+  .main-artefactos .inazuma .ipos_5 img {
+    width: 80px;
+    height: 80px;
+  }
+  .main-artefactos .inazuma .ipos_6 {
+    padding: 5px;
+  }
+  .main-artefactos .inazuma .ipos_6 img {
+    width: 80px;
+    height: 80px;
   }
 }
 /*  ARMAS */

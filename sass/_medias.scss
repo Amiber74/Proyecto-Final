@@ -109,6 +109,15 @@
             "pos_3 pos_4"
             "pos_5 pos_6"
             "pos_7 pos_8";
+            @for $i from 1 to 9 {
+                .mpos_#{$i}{
+                    padding: 5px;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
         }
         .liyue{
             display: grid;
@@ -120,6 +129,15 @@
             "pos_3 pos_4"
             "pos_5 pos_6"
             "pos_7 pos_8";
+            @for $i from 1 to 9 {
+                .lpos_#{$i}{
+                    padding: 5px;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
         }
         .inazuma{
             grid-template-columns: repeat(2,1fr);
@@ -129,6 +147,15 @@
             "pos_1 pos_2"
             "pos_3 pos_4"
             "pos_5 pos_6";
+            @for $i from 1 to 7 {
+                .ipos_#{$i}{
+                    padding: 5px;
+                    img{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
         }
     }
 }
