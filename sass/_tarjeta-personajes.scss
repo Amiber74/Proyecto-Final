@@ -10,7 +10,6 @@
             background-color:map-get($fondos_elementos,electro);
         }
         .geo{
-            
             background-color:map-get($fondos_elementos,geo);
         }
         .hydro{
@@ -293,7 +292,7 @@
                 grid-area: img;
                 padding: 10px;
                 @extend .centrar;
-                @include ajuste-tamano(200px,100%);
+                @include ajuste-tamano(200px,90%);
             }
         }
         .armas{
