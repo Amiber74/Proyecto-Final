@@ -125,6 +125,7 @@
             }
             .img_a{
                 grid-area: img;
+                text-align: center;
                 @extend .centrar;
                 img{
                 padding: 5px;
@@ -340,6 +341,7 @@
             }
             .img{
                 grid-area: img;
+                text-align: center;
                 @extend .centrar;
                 img{
                     padding: 5px;

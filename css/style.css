@@ -806,7 +806,7 @@ main .trailer iframe {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "titulo titulo titulo" "p_1 p_2 p_3" "p_4 p_5 p_6";
-  background-image: url(../Img/personajes/anemo/Anemo.webp);
+  background-image: url(../Img/personajes/anemo/Anemo.png);
 }
 .personajes .anemo .p_1:hover {
   background-color: rgba(81, 53, 107, 0.76);
@@ -862,7 +862,7 @@ main .trailer iframe {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" "p_9 p_10 . . ";
-  background-image: url(../Img/personajes/pyro/Pyro.webp);
+  background-image: url(../Img/personajes/pyro/Pyro.png);
 }
 .personajes .pyro .p_1:hover {
   background-color: rgba(81, 53, 107, 0.76);
@@ -950,7 +950,7 @@ main .trailer iframe {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 .";
-  background-image: url(../Img/personajes/hydro/Hydro.webp);
+  background-image: url(../Img/personajes/hydro/Hydro.png);
 }
 .personajes .hydro .p_1:hover {
   background-color: rgba(81, 53, 107, 0.76);
@@ -1014,7 +1014,7 @@ main .trailer iframe {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" "p_9 p_10 . .";
-  background-image: url(../Img/personajes/cryo/Cryo.webp);
+  background-image: url(../Img/personajes/cryo/Cryo.png);
 }
 .personajes .cryo .p_1:hover {
   background-color: rgba(81, 53, 107, 0.76);
@@ -1102,7 +1102,7 @@ main .trailer iframe {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 p_8" "p_9 . . .";
-  background-image: url(../Img/personajes/electro/Electro.webp);
+  background-image: url(../Img/personajes/electro/Electro.png);
 }
 .personajes .electro .p_1:hover {
   background-color: rgba(81, 53, 107, 0.76);
@@ -1182,7 +1182,7 @@ main .trailer iframe {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas: "titulo titulo titulo titulo" "p_1 p_2 p_3 p_4" "p_5 p_6 p_7 .";
-  background-image: url(../Img/personajes/geo/Geo.webp);
+  background-image: url(../Img/personajes/geo/Geo.png);
 }
 .personajes .geo .p_1:hover {
   background-color: rgba(81, 53, 107, 0.76);
