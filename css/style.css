@@ -1637,7 +1637,7 @@ main .trailer iframe {
   display: grid;
   gap: 15px 0px;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr) 160px 1fr;
+  grid-template-rows: repeat(4, 1fr) 2fr 50px;
   grid-template-areas: "nombre" "email" "contraseña" "pregunta" "opinion" "enviar";
   border-radius: 20px;
   background-color: rgba(83, 60, 165, 0.678);
