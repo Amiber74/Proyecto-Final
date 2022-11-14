@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Andika", sans-serif;
+  list-style-type: none;
 }
 
 .pagina {
@@ -1568,6 +1569,11 @@ main .trailer iframe {
 }
 .tarjeta_personaje footer h2 {
   font-size: 1.8rem;
+}
+.tarjeta_personaje footer a {
+  text-decoration: none;
+  color: black;
+  list-style-type: none;
 }
 .tarjeta_personaje footer ul {
   list-style-type: none;
